@@ -20,60 +20,10 @@
     </div>
     <main>
         this is main
-        <!-- features section by Borys -->
-        <section class="features">
-            <div class="features__container">
-                <img src="img/features-image.jpg" alt="features image">
-                <h6 class="features__title">\ FEATURES \</h6>
-                <p class="features__description">What Makes Our Offering Seamless</p>
-                <p class="features__description">Looking for a lightning solution for your home or office?</p>
-                <p class="features__description">
-                    At Prizma Studio, we're dedicated to illuminating your spaces with creativity and precision. With
-                    our expertise in lightning design for residential and office environments, we're your top choice for
-                    bringing your vision to life with innovative and tailored solutions.
-                </p>
-                <ul class="features__list">
-                    <li class="features__item">
-                        <img src="#" alt="tick">We listen to our clients;
-                    </li>
-                    <li class="features__item">
-                        <img src="#" alt="tick">We factor in the architect's intent;
-                    </li>
-                    <li class="features__item">
-                        <img src="#" alt="tick">We take your budget into account;
-                    </li>
-                    <li class="features__item">
-                        <img src="#" alt="tick">We are attentive to details;
-                    </li>
-                    <li class="features__item">
-                        <img src="#" alt="tick">We design lighting to be seen by everyone.
-                    </li>
-                </ul>
-                <p class="features__description">Trust us to light up your world with brilliance.</p>
-                <a class="features__button" href="#">More About Us</a>
-            </div>
-        </section>
-        <!-- features section by Borys end -->
-        <!-- features gallery section by Borys -->
-        <section class="features-gallery">
-            <div class="features-gallery__container">
-                <ul class="features-gallery__list">
-                    <li class="features-gallery__item">
-                        <img src="img/features-list-image-1.jpg" alt="features gallery image 1">
-                    </li>
-                    <li class="features-gallery__item">
-                        <img src="img/features-list-image-2.jpg" alt="features gallery image 2">
-                    </li>
-                    <li class="features-gallery__item">
-                        <img src="img/features-list-image-3.jpg" alt="features gallery image 3">
-                    </li>
-                    <li class="features-gallery__item">
-                        <img src="img/features-list-image-4.jpg" alt="features gallery image 4">
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- features gallery section by Borys end-->
+        <!-- Features Section -->
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/features.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partial/features.gallery.partial.html"></section>
+        <!-- Features Section End -->
         <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/index.projects.partial.html">
     </main>
     <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/footer.partial.html"></footer>
