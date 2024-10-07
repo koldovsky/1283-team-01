@@ -1,76 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog Page</title>
-    <script src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <section class="catalog">
-     <div class="header">
-        <h1 class="header_title">Shaping Light, Shaping Spaces</h1>
-        <p class="header__description">Take a look at our selection of top picks you've been searching for. We've got everything for your lighting needs.</p>
-        <a href="#" class="header__button">Our Store</a>
+<section class="catalog">
+  <div class="header">
+    <h1 class="header_title">Shaping Light, Shaping Spaces</h1>
+    <p class="header__description">
+      Take a look at our selection of top picks you've been searching for. We've
+      got everything for your lighting needs.
+    </p>
+    <a href="#" class="header__button">Our Store</a>
+  </div>
+  <h2 class="catalog__title">catalogs</h2>
+  <div class="catalog__item catalog__item--wooden-life">
+    <h3 class="catalog__item-title">"Wooden Life" Catalog</h3>
+    <p class="catalog__item-description">
+      Explore our comprehensive catalog of lighting fixtures, featuring a wide
+      range of styles and designs to illuminate every space beautifully.
+    </p>
+    <a href="#" class="catalog__item-download">download pdf</a>
+  </div>
+  <div class="catalog__item catalog__item--outdoor">
+    <h3 class="catalog__item catalog__title">Outdoor Lighting Catalog</h3>
+    <p class="catalog__item-description">
+      Explore our outdoor lighting catalog, showcasing durable and stylish
+      fixtures designed to enhance your outdoor living areas with elegance.
+    </p>
+    <a href="#" class="catalog__item-download">download pdf</a>
+  </div>
+  <div class="carousel">
+    <div class="carousel__item">
+      <img src="./img/lite.png" alt="Aurora Lamp" class="carousel__image" />
+      <h3 class="catalog__item-title">Aurora Lamp</h3>
+      <p class="carousel__item-category">Classic Collection</p>
+      <p class="carousel__item-year">2023</p>
     </div>
-            <h2 class="catalog__title">catalogs</h2>
-            <div class="catalog__item catalog__item--wooden-life">
-            <h3 class="catalog__item-title">"Wooden Life" Catalog</h3>
-            <p class="catalog__item-description">Explore our comprehensive catalog of lighting fixtures, featuring a wide range of styles and designs to illuminate every space beautifully.</p>
-            <a href="#" class="catalog__item-download">download pdf</a>
-        </div>
-        <div class="catalog__item catalog__item--outdoor">
-            <h3 class="catalog__item catalog__title">Outdoor Lighting Catalog</h3>
-            <p class="catalog__item-description">Explore our outdoor lighting catalog, showcasing durable and stylish fixtures designed to enhance your outdoor living areas with elegance.</p>
-            <a href="#" class="catalog__item-download">download pdf</a>
-        </div>
-        </section>
-        <div class="carousel">
-        <div class="carousel__item">
-            <img src="/img/Lite.png" alt="Aurora Lamp" class="carousel__image">
-            <h3 class="catalog__item-title">Aurora Lamp</h3>
-            <p class="carousel__item-category">Classic Collection</p>
-            <p class="carousel__item-year">2023</p>
-        </div>    
-            <div class="carousel__item">
-                <img src="/img/luminaire.png" alt="Luminous Haven" class="carousel__image">
-                <h3 class="catalog__item-title">Luminous Haven</h3>
-                <p class="carousel__item-category">Wooden Life Collection</p>
-                <p class="carousel__item-year">2024</p>
-            </div>
-            <div class="carousel__item">
-                <img src="/img/nightlight.png" alt="Wooden Blocks" class="carousel__image">
-                <h3 class="catalog__item-title">Wooden Blocks</h3>
-                <p class="carousel__item-category">Wooden Life Collection</p>
-                <p class="carousel__item-year">2024</p>
-            </div>
-            <div class="carousel__item">
-                <img src="/img/footlite.png" alt="Arretia Lamp" class="carousel__image">
-                <h3 class="catalog__item-title">Arretia Lamp</h3>
-                <p class="carousel__item-category">Bedside Lamps</p>
-                <p class="carousel__item-year">2022</p> 
-            </div>    
+    <div class="carousel__item">
+      <img
+        src="./img/luminaire.png"
+        alt="Luminous Haven"
+        class="carousel__image"
+      />
+      <h3 class="catalog__item-title">Luminous Haven</h3>
+      <p class="carousel__item-category">Wooden Life Collection</p>
+      <p class="carousel__item-year">2024</p>
+    </div>
+    <div class="carousel__item">
+      <img
+        src="./img/nightlight.png"
+        alt="Wooden Blocks"
+        class="carousel__image"
+      />
+      <h3 class="catalog__item-title">Wooden Blocks</h3>
+      <p class="carousel__item-category">Wooden Life Collection</p>
+      <p class="carousel__item-year">2024</p>
+    </div>
+    <div class="carousel__item">
+      <img src="/img/footlite.png" alt="Arretia Lamp" class="carousel__image" />
+      <h3 class="catalog__item-title">Arretia Lamp</h3>
+      <p class="carousel__item-category">Bedside Lamps</p>
+      <p class="carousel__item-year">2022</p>
+    </div>
 
-            <div class="carousel__item">
-                <img src="/img/lite2.png" alt="Cake in the Ocean" class="carousel__image">
-                <h3 class="catalog__item-title">Ceiling fixtures</h3>
-                <p class="carousel__item-category">Bedside Lamps</p>
-                <p class="carousel__item-year">2022</p>  
-            </div>  
-        </div>  
-        
-           <button class="carousel__button carousel__button--previous"></button>
-           <button class="carousel__button carousel__button--next"></button>
-        </div>
-
-
-              
-           
-
-            
-    
-</body>
-</html>
+    <div class="carousel__item">
+      <img
+        src="/img/lite2.png"
+        alt="Cake in the Ocean"
+        class="carousel__image"
+      />
+      <h3 class="catalog__item-title">Ceiling fixtures</h3>
+      <p class="carousel__item-category">Bedside Lamps</p>
+      <p class="carousel__item-year">2022</p>
+    </div>
+    <button class="carousel__button carousel__button--previous"></button>
+    <button class="carousel__button carousel__button--next"></button>
+  </div>
+</section>
