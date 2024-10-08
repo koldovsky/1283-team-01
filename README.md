@@ -34,6 +34,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 * Anastasiia Berest
 * Anna Levus
 * Anastasiia Damian
+* Yuliia Chepak
 * Zhanna Bazhulina
 * Yulya Chorna
 * Yevheniia Burlakova
@@ -41,3 +42,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 * Pavlo Svitenko
 * Almanov Borys
 * Kavf Volodymyr
+* Bortun Andrey
