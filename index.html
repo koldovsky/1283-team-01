@@ -11,33 +11,33 @@
         integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="hero-wrap">
         <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/header.partial.html"></header>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/index.hero.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/index.hero.partial.html">
+        </section>
     </div>
     <main>
-       this is main
-       <section class="features">
-            <div class="features__container">
-                <h6 class="features__tittle">\ FEATURES \</h6>
-                <p class="features__description">What Makes Our Offering Seamless</p>
-                <p class="features__description">Looking for a lightning solution for your home or office?</p>
-                <p class="features__description">At Prizma Studio, we're dedicated to illuminating your spaces with creativity and precision. With our expertise in lightning design for residential and office environments, we're your top choice for bringing your vision to life with innovative and tailored solutions.</p>
-                <ul class="features__list">
-                    <li class="features__list-item"><img src="#" alt="tick">We listen to our clients;</li>
-                    <li class="features__list-item"><img src="#" alt="tick">We factor in the architect's intent;</li>
-                    <li class="features__list-item"><img src="#" alt="tick">We take your budget into account;</li>
-                    <li class="features__list-item"><img src="#" alt="tick">We are attentive to details;</li>
-                    <li class="features__list-item"><img src="#" alt="tick">We design lighting to be seen by everyone.</li>
-                </ul>
-                <p class="features__description">Trust us to light up your world with brilliance.</p>
-                <button class="features__button"><a href="#">More About Us</a></button>
-            </div>
-       </section>
+        
+        <!-- Features Section -->
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/features.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/features.gallery.partial"></section>
+        <!-- Features Section End -->
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/index.services.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/index.contact-us.partial.html"></section>
+        
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/index.projects.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/collections.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/news-and-articles.partial.html"></section>
+
     </main>
     <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/footer.partial.html"></footer>
     <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/svg.partial.html"></div>
 </body>
-</html>
 
+</html>
