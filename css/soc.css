@@ -1,0 +1,9 @@
+.soc {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+
+.soc a {
+    color: var(--color-main);
+}
