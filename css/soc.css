@@ -6,4 +6,9 @@
 
 .soc a {
     color: var(--color-main);
+    transition: var(--trs);
+}
+
+.soc a:hover svg, .soc a:active svg, .soc a:focus svg {
+    color: var(--color-light);
 }
