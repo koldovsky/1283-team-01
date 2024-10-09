@@ -29,6 +29,10 @@
     text-align: right;
 }
 
+.hero .soc {
+    margin-top: var(--gap24);
+}
+
 @media only screen and (max-width: 768px){
     .hero__row:nth-child(n) {
         grid-template-columns: 1fr;
