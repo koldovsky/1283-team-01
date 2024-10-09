@@ -3,7 +3,7 @@
     background-color: var(--color-black);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: conver;
+    background-size: cover;
     background-image: url('../img/bg-hero-home.png');
 }
 
@@ -16,21 +16,47 @@
 
 .hero__row {
     display: grid;
-    grid-template-columns: 2.5fr 1fr 1fr;
+    grid-template-columns: 2.5fr 0.5fr 1.5fr;
     gap: var(--gap40);
+    align-items: flex-start;
 }
 
 .hero__row:last-child {
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
 }
 
 .hero__row div:last-child {
     grid-column: 3;
     text-align: right;
+    justify-content: flex-end;
+}
+
+.hero__row div:last-child * {
+    margin-left: auto;
+}
+
+.hero__col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap16);
 }
 
 .hero .soc {
     margin-top: var(--gap24);
+}
+
+.hero svg {
+    color: var(--color-main);
+}
+
+.hero p:not([class]){
+    opacity: 0.6;
+}
+
+.hero strong {
+    color: var(--color-light);
 }
 
 @media only screen and (max-width: 768px){
@@ -41,6 +67,11 @@
     .hero__row div:nth-child(n) {
         grid-column: 1;
         text-align: left;
+        justify-content: flex-start;
+    }
+
+    .hero__row div:last-child * {
+        margin-left: 0;
     }
 
     .hero-wrap {

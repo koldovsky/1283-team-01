@@ -68,17 +68,19 @@
 
 .menu {
     display: flex;
-    gap: var(--gap16);
+    gap: var(--gap24);
     align-items: center;
 }
 
 .menu__item {
     text-decoration: underline;
     font-size: 14px;
+    opacity: 0.6;
 }
 
 .menu__item:hover, .menu__item:active, .menu__item:focus {
     color: var(--color-main);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
