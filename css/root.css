@@ -4,6 +4,7 @@
   --color-main: #d78c43;
   --color-black: #000;
   --color-white: #fff;
+  --color-dark: #252527;
   --gap: 8px;
   --gap16: 16px;
   --gap24: 24px;
@@ -14,4 +15,12 @@
   --gap64: 64px;
   --gap72: 72px;
   --gap80: 80px;
+  --trs: all 0.3s ease-in-out;
+
+  --xs: 480px;
+  --sm: 768px;
+  --md: 991px;
+  --lg: 1200px;
+  --xlg: 1400px;
+
 }
