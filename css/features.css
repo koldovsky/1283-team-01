@@ -1,0 +1,15 @@
+.feature__container{
+    padding-left: 30px;
+    padding-right: 90px;
+}
+
+.features__title{
+    color: var(--color-main);
+    background-color: var(--color-black);
+
+}
+
+.features__description{
+    color: var(--color-light);
+    background-color: var(--color-black);
+}
