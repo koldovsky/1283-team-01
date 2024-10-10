@@ -1,0 +1,53 @@
+.workflow {
+    background-color: var(--color-dark);
+    padding: 90px 24px;
+    display: block;
+    text-align: center;
+
+    .workflow__title, .workflow__learn-more{
+        font-size: 0.6rem;
+        color: var(--color-main);
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: calc(0.2*0.75rem);
+    }
+    .workflow__subtitle{
+        font-size: 2.5rem;
+        color: var(--color-white);
+        letter-spacing: calc(0.2*0.75rem);
+        padding-top: 30px;
+    }
+    .workflow__description{
+        font-size: 1.2rem;
+        color: var(--color-lightgrey);
+        padding-top: 30px;
+        font-weight: 200;
+    }
+    .workflow__steps{
+        padding-top: 10px;
+    }
+    .workflow__step{
+        padding-top: 30px;
+    }
+    .workflow__icon{
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .workflow__step-title{
+        padding-top: 25px;
+        font-size: 1.4rem;
+        color: var(--color-white);
+        vertical-align: baseline;
+    }
+    .workflow__step-description{
+        color: var(--color-gray);
+        font-weight: 200;
+        padding-top: 25px;
+    }
+    .workflow__learn-more{
+        display: block;
+        padding-top: 25px;
+    }
+    
+}
