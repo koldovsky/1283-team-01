@@ -6,7 +6,8 @@
     background-color: var(--color-black);
     text-align: left;
 }
-.features__image{
+
+.features__image {
     width: 100%;
 }
 
@@ -22,18 +23,17 @@
     background-color: var(--color-black);
 }
 
-.features__description--short{
+.features__description--short {
     font-size: 19px;
     background-color: var(--color-black);
 }
 
-.features__description--long{
+.features__description--long {
     font-size: 16px;
     background-color: var(--color-black);
 }
 
-.features__description--list{
+.features__description--list {
     font-size: 14px;
     background-color: var(--color-black);
 }
-
