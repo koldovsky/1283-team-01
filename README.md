@@ -37,6 +37,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 * Yuliia Chepak
 * Zhanna Bazhulina
 * Yulya Chorna
+* Kateryna Volianiuk
 * Yevheniia Burlakova
 * Andriy Titov 
 * Pavlo Svitenko
