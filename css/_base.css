@@ -1,11 +1,10 @@
-@import url(./root.css);
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red; 
+/*     outline: 1px solid red;  */
 }
 
 *::selection {
@@ -37,7 +36,7 @@ img {
   max-width: 100%;
   user-select: none;
 }
-/*
+
 a {
   text-decoration: none;
   color: inherit;
@@ -50,5 +49,5 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:not
   appearance: none;
   outline: none;
   box-shadow: none;
-}*/
+}
 

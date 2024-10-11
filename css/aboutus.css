@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: rgb(225, 225, 225);
+    --color-secondary-1: rgb(215, 140, 67); 
+    --color-secondary-2: rgb(187, 187, 187);
+    --primary-text-color: var(--color-primary);
+    --secondary-1-text-color: var(--color-secondary-1);
+    --secondary-2-text-color: var(--color-secondary-2);
+    scroll-behavior: smooth;
+    font-family: "Manrope", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+    
+
+.about-us__content--left {
+    margin:auto;
+}
+
+.about-us__title {
+    color: var(--color-secondary-1); 
+    padding: 0 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 15.4px;
+}
+
+.about-us__subtitle {
+    color: var(--color-primary);
+    text-align: left;
+    font-size: 51px;
+    line-height: 61.2px;
+    font-weight: 600;
+}
+
+.about-us__description {
+    color: var(--color-primary);
+    text-align: left;
+    font-size: 19px;
+    line-height: 26.03px;
+    font-weight: 500;
+}
+
+.about-us__content--right {
+    margin:auto;
+}
+
+ .about-us__subtitle {
+    color: var(--color-primary);
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 42.57px;
+}
+
+.about-us__text {
+    color: var(--color-secondary-2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.48px;
+}
+
+@media (min-width: 600px) {
+    .statistic {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.statistic {
+    padding: 0 5px;
+}
+
+.statistic__number {
+    color:var(--color-primary);
+    font-weight: 600;
+    display: grid;
+    gap: 10px;
+    border: 1px solid var(--color-primary);
+    padding: 5px;
+}
+
