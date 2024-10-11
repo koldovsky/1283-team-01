@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.soc a {
+.soc a svg {
     color: var(--color-light);
     transition: var(--trs);
 }
