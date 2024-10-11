@@ -37,3 +37,10 @@
     font-size: 14px;
     background-color: var(--color-black);
 }
+
+.features__icon{
+    height: 20px;
+    width: 24px;
+    display: flex;
+    justify-content: space-between;
+}
