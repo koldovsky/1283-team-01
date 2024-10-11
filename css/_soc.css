@@ -5,10 +5,10 @@
 }
 
 .soc a {
-    color: var(--color-main);
+    color: var(--color-light);
     transition: var(--trs);
 }
 
 .soc a:hover svg, .soc a:active svg, .soc a:focus svg {
-    color: var(--color-light);
+    color: var(--color-main);
 }
