@@ -1,98 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
 }
 
-:root {
-    --color-primary: rgb(225, 225, 225);
-    --color-secondary-1: rgb(215, 140, 67); 
-    --color-secondary-2: rgb(187, 187, 187);
-    --primary-text-color: var(--color-primary);
-    --secondary-1-text-color: var(--color-secondary-1);
-    --secondary-2-text-color: var(--color-secondary-2);
-    scroll-behavior: smooth;
-    font-family: "Manrope", sans-serif;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
-
-    
-
-.about-us__content--left {
-    margin:auto;
+.about-us__content--left, 
+.about-us__content--right {
+    flex: 1;
+    padding: 20px;
 }
 
 .about-us__title {
-    color: var(--color-secondary-1); 
-    padding: 0 0px;
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    line-height: 15.4px;
+    margin-bottom: 10px;
 }
 
 .about-us__subtitle {
-    color: var(--color-primary);
-    text-align: left;
-    font-size: 51px;
-    line-height: 61.2px;
+    font-size: 40px;
+    line-height: 50px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .about-us__description {
-    color: var(--color-primary);
-    text-align: left;
-    font-size: 19px;
-    line-height: 26.03px;
-    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
 }
 
-.about-us__content--right {
-    margin:auto;
-}
-
- .about-us__subtitle {
-    color: var(--color-primary);
-    font-size: 33px;
+.about-us__content--right .about-us__subtitle {
+    font-size: 35px;
+    line-height: 45px;
     font-weight: 400;
-    line-height: 42.57px;
 }
 
 .about-us__text {
-    color: var(--color-secondary-2);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24.48px;
-}
-
-@media (min-width: 600px) {
-    .statistic {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        display: flex;
-    }
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 
 .statistic {
-    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(225, 225, 225, 0.2); 
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2); 
+}
+
+.statistic__item {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
 }
 
 .statistic__number {
-    color:var(--color-primary);
-    font-weight: 600;
-    display: grid;
-    gap: 10px;
-    border: 1px solid var(--color-primary);
-    padding: 5px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
+.statistic__description {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us__content--left, 
+    .about-us__content--right {
+        padding: 10px;
+    }
+
+    .statistic {
+        flex-direction: column;
+    }
+
+    .statistic__item {
+        margin-bottom: 20px;
+    }
+}
