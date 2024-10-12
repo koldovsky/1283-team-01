@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 40px 0;
 }
 
@@ -48,14 +48,14 @@
 .statistic {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 20px 0;
     border-top: 1px solid rgba(225, 225, 225, 0.2); 
     border-bottom: 1px solid rgba(225, 225, 225, 0.2); 
 }
 
 .statistic__item {
-    text-align: center;
+    text-align: left;
     flex: 1;
     margin: 10px;
 }
@@ -73,7 +73,7 @@
 
 @media (max-width: 600px) {
     .about-us {
-        flex-direction: column;
+        flex-direction: left;
         text-align: center;
     }
 
@@ -83,7 +83,7 @@
     }
 
     .statistic {
-        flex-direction: column;
+        flex-direction: left;
     }
 
     .statistic__item {
