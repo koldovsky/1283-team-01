@@ -14,6 +14,7 @@
 }
 
 .about-us__title {
+    color: var(--color-main);
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
@@ -21,6 +22,7 @@
 }
 
 .about-us__subtitle {
+    color: var(--color-white);
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
@@ -28,6 +30,7 @@
 }
 
 .about-us__description {
+    color: var(--color-lightgrey);
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 40px;
@@ -37,12 +40,14 @@
     font-size: 35px;
     line-height: 45px;
     font-weight: 400;
+    color: var(--color-white);
 }
 
 .about-us__text {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 30px;
+    color: var(--color-grey);
 }
 
 .statistic {
@@ -61,12 +66,14 @@
 }
 
 .statistic__number {
+    color: var(--color-white);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .statistic__description {
+    color: var(--color-grey);
     font-size: 16px;
     font-weight: 400;
 }
