@@ -1,0 +1,24 @@
+.features-gallery{
+    padding-top: var(--gap30);
+    padding-bottom: var(--gap30);
+    padding-left: var(--gap24);
+    padding-right: var(--gap24);
+}
+
+.features-gallery__list{
+    list-style: none;
+    display: grid;
+    gap: var(--gap30);
+}
+
+@media (min-width: 769px){
+    .features-gallery__list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 963px){
+    .features-gallery__list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
