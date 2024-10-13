@@ -13,7 +13,8 @@
   --hover-text-color:#e7903b;
   --primary-footer-background:var(--color-black);
   --secondary-footer-background:#141414;
-  --gap: 8px;
+  --gap0: 0px;
+  --gap8: 8px;
   --gap10: 10px;
   --gap16: 16px;
   --gap: 20px;
