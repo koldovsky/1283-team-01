@@ -10,6 +10,9 @@
   --color-gray: #bbbbbb;
   --divider-color:#3d3d3d;
   --secondary-divider-color:#f1d1af;
+  --hover-text-color:#e7903b;
+  --primary-footer-background:var(--color-black);
+  --secondary-footer-background:#141414;
   --gap: 8px;
   --gap10: 10px;
   --gap16: 16px;
