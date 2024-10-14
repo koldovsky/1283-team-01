@@ -9,13 +9,18 @@
   --color-lightgrey: #e1e1e1;
   --color-gray: #bbbbbb;
   --divider-color:#3d3d3d;
+  --border-color:#39393a;
   --secondary-divider-color:#f1d1af;
   --hover-text-color:#e7903b;
   --primary-footer-background:var(--color-black);
   --secondary-footer-background:#141414;
-  --gap: 8px;
+  --gap0: 0px;
+  --gap8: 8px;
+  --gap10: 10px;
   --gap16: 16px;
+  --gap: 20px;
   --gap24: 24px;
+  --gap30: 30px;
   --gap32: 32px;
   --gap40: 40px;
   --gap48: 48px;
@@ -23,6 +28,8 @@
   --gap64: 64px;
   --gap72: 72px;
   --gap80: 80px;
+  --gap90: 90px;
+  --gap600: 600px;
   --trs: all 0.3s ease-in-out;
 
   --xs: 480px;
