@@ -11,7 +11,7 @@
 .collections__lighting-solutions {
   display: flex;
   justify-content: flex-start;
-  width: 260px;
+  width: 260px; 
   text-align: left;
   padding: 0;
   margin: 0;
@@ -53,11 +53,11 @@
 }
 
 .materials__item {
- display: flex;
- box-sizing: border-box;
- flex-wrap: wrap;
- margin: 0px -7.5px 0px -7.5px;
- padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: 0px -7.5px 0px -7.5px;
+  padding: 0;
 }
 
 .materials__image {
@@ -94,4 +94,47 @@
   height: 192px;
   width: 320px;
   position: absolute;
+}
+
+@media (max-width: 320px) {
+  .collections {
+    padding: 40px 15px; 
+  }
+
+  .collections__lighting-solutions {
+    width: 100%; 
+  }
+
+  .collections__title {
+    font-size: 14px;
+  }
+
+  .collections__subtitle {
+    font-size: 24px; 
+  }
+
+  .collections__description {
+    font-size: 16px; 
+  }
+
+  .collections__text {
+    font-size: 14px; 
+  }
+
+  .materials__item {
+    margin: 0; 
+  }
+
+  .materials__name {
+    font-size: 18px; 
+  }
+
+  .materials__description {
+    font-size: 14px; 
+  }
+
+  .collections__room-image {
+    height: 150px; 
+    width: 100%; 
+  }
 }
