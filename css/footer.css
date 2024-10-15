@@ -1,12 +1,11 @@
 .footer {
   background-color: var(--primary-footer-background);
-  display:flex;
+  display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: auto;
-  box-sizing: border-box; 
-   overflow-x: hidden;
-
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   .footer__company-info__paragraph {
     font-size: 16px;
@@ -30,17 +29,33 @@
   }
 }
 
-@media (min-width:765px) {
-  .footer{
+@media (min-width: 765px) {
+  .footer {
     display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    
   }
- .footer__signature{
-  grid-column: 1/-1;
-  margin: 20px 0;
- }
+  .footer__signature {
+    grid-column: 1/-1;
+    margin-top: 80px;
+  }
+  .footer__menu__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__contacts-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
 
 .footer p,
@@ -70,19 +85,18 @@
   flex-direction: column;
 
   @media (min-width: 765px) {
-      flex-direction: row;
-      justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
 
   .footer__menu__column {
     margin-top: 40px;
     display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  text-align: center;
-  flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
   }
 
   .footer__menu__column path {
@@ -118,15 +132,14 @@
   padding: 0px 20px;
   background-color: var(--secondary-footer-background);
   border-radius: 0 20px 0 0;
-  width: 272px;
-  margin: 45px auto;
+  max-width: fit-content;
+  margin: 45px 20px;
   .footer__contacts-info-list {
     list-style-type: none;
     gap: 15px;
     padding: 15px 0;
   }
 }
-
 
 .footer svg {
   color: var(--color-main);
