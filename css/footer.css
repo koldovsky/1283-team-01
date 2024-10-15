@@ -1,5 +1,12 @@
 .footer {
   background-color: var(--primary-footer-background);
+  display:flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box; 
+   overflow-x: hidden;
+
 
   .footer__company-info__paragraph {
     font-size: 16px;
@@ -21,6 +28,19 @@
     padding-top: 80px;
     padding-bottom: 0%;
   }
+}
+
+@media (min-width:765px) {
+  .footer{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  }
+ .footer__signature{
+  grid-column: 1/-1;
+  margin: 20px 0;
+ }
 }
 
 .footer p,
@@ -64,6 +84,7 @@
   text-align: center;
   flex:1;
   }
+
   .footer__menu__column path {
     fill: none;
     stroke: var(--secondary-divider-color);
