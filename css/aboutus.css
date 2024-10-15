@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
     padding: 40px 0;
 }
 
@@ -30,7 +29,7 @@
 }
 
 .about-us__description {
-    color: var(--color-lightgrey);
+    color: var(--color-grey);
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 40px;
