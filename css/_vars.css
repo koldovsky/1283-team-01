@@ -13,13 +13,13 @@
   --secondary-divider-color:#f1d1af;
   --hover-text-color:#e7903b;
   --primary-footer-background:var(--color-black);
-  /* --hover-color:; */
+  --hover-color:rgba(0, 0, 0, 0.6); 
   --secondary-footer-background:#141414;
   --gap0: 0px;
   --gap8: 8px;
   --gap10: 10px;
   --gap16: 16px;
-  --gap: 20px;
+  --gap20: 20px;
   --gap24: 24px;
   --gap30: 30px;
   --gap32: 32px;
