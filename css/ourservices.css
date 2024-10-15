@@ -1,0 +1,17 @@
+.ourservices{
+    padding-left: var(--gap30);
+    padding-right: var(--gap30);
+    padding-top: var(--gap90);
+    padding-bottom: var(--gap90);
+    background-color: var(--color-black);
+    text-align: left;
+    max-width: var(--sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ourservices__title{
+    font-size: var(--gap10);
+    color: var(--color-main);
+    margin-top: var(--gap20);
+    background-color: var(--color-black);
+}
