@@ -5,12 +5,14 @@
     padding-bottom: var(--gap90);
     background-color: var(--color-black);
     text-align: left;
-    max-width: var(--sm);
-    border-bottom: 1px solid var(--border-color);
 }
 
 .features__image {
     width: 100%;
+}
+
+.features__content{
+    max-width: var(--sm);
 }
 
 .features__title {
