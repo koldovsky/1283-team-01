@@ -1,0 +1,10 @@
+body {
+    background-color: #252527;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.catalog__header {
+    text-align: left;
+    padding: 20px 40px;
+}
