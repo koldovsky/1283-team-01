@@ -28,6 +28,35 @@
     height: 100%;
 }
 
+.features-gallery__content{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: calc(var(--gap30) / 2);
+    opacity: 0;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-gallery__title{
+    font-size: var(--gap24);
+    margin-bottom: var(--gap30);
+}
+
+.fetures-gallery__description{
+    font-size: var(--gap16);
+    text-align: center;
+}
+
+.features-gallery__content:hover{
+    opacity: 1;
+}
+
 @media (min-width: 769px) {
     .features-gallery__list {
         grid-template-columns: 1fr 1fr;
