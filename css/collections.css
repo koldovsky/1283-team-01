@@ -1,6 +1,6 @@
 .collections {
   background-color: #0d0d0d;
-  padding: 100px 50px;
+  padding: 90px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,8 +10,9 @@
 
 .collections__lighting-solutions {
   display: flex;
+  flex-direction: column;
   gap: 50px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .collections__content {
@@ -22,7 +23,7 @@
 }
 
 .collections__title {
-  font-size: 14px;
+  font-size: 10px;
   color: #d78c43;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -30,24 +31,24 @@
 }
 
 .collections__subtitle {
-  font-size: 56px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 600;
   margin-bottom: 20px;
   color: #ffffff;
 }
 
 .collections__description {
-  font-size: 20px;
-  color: #b5b5b5;
+  font-size: 19px;
+  color: #e1e1e1;
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 26px;
 }
 
 .collections__text {
   font-size: 18px;
-  color: #b5b5b5;
+  color:  #bbbbbb;
   margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 24px;
 }
 
 .materials {
@@ -59,27 +60,27 @@
 .materials__item {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .materials__image {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
-  border-radius: 5px;
 }
 
 .materials__name {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 0.14px;
 }
 
 .materials__description {
   font-size: 16px;
   color: #bbbbbb;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 .collections__image {
@@ -89,7 +90,6 @@
 .collections__room-image {
   width: 100%;
   height: auto;
-  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -119,3 +119,5 @@
 
   .collections__subtitle {
     font-size: 72px;
+  }
+}
