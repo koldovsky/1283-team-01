@@ -1,130 +1,123 @@
-body {
-  background-color: var(--color-black); 
-  color: var(--color-white); 
-}
-
 .collections {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; 
+  background-color: #0d0d0d;
   padding: 90px 30px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
   font-family: "Manrope", sans-serif;
 }
 
 .collections__lighting-solutions {
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start;
-  width: 100%; 
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.collections__content {
+  max-width: 600px;
+  margin-right: 40px;
   text-align: left;
-  padding: 0;
-  margin: 0;
+  z-index: 2;
 }
 
 .collections__title {
-  color: var(--color-main);
-  font-weight: 800;
-  font-size: 36px; 
-  margin-bottom: 10px; 
+  font-size: 10px;
+  color: #d78c43;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .collections__subtitle {
-  color: var(--color-white);
-  font-size: 24px; 
+  font-size: 40px;
   font-weight: 600;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .collections__description {
-  color: var(--color-lightgrey);
-  font-size: 18px; 
-  font-weight: 400;
-  margin-bottom: 20px; 
+  font-size: 19px;
+  color: #e1e1e1;
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+
+.collections__text {
+  font-size: 18px;
+  color:  #bbbbbb;
+  margin-bottom: 30px;
+  line-height: 24px;
 }
 
 .materials {
-  padding: 7.5px 0;
-  margin: 0;
   display: flex;
-  flex-direction: column; 
-  box-sizing: border-box;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .materials__item {
   display: flex;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  margin: 0; 
-  padding: 0;
+  gap: 20px;
+  align-items: center;
 }
 
 .materials__image {
-  border-radius: 50%; 
-  height: 70px;
   width: 70px;
-  margin-right: 10px; 
+  height: 70px;
+  object-fit: cover;
 }
 
 .materials__name {
-  color: var(--color-white);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
+  color: #ffffff;
+  margin-bottom: 0.14px;
 }
 
 .materials__description {
-  color: var(--color-gray);
   font-size: 16px;
+  color: #bbbbbb;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
+  line-height: 25px;
+}
+
+.collections__image {
+  flex: 1;
 }
 
 .collections__room-image {
-  border-radius: 0; 
-  height: 400px; 
-  width: 100%; 
-  margin-top: 20px; /
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 768px) {
   .collections {
-    padding: 40px 15px; 
+    padding: 120px 90px;
   }
 
   .collections__lighting-solutions {
-    width: 100%; 
+    flex-direction: row;
+    gap: 60px;
   }
 
-  .collections__title {
-    font-size: 20px; 
+  .collections__content {
+    max-width: 50%;
   }
 
   .collections__subtitle {
-    font-size: 18px; 
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .collections__content {
+    max-width: 600px;
   }
 
-  .collections__description {
-    font-size: 14px; 
-  }
-
-  .materials__item {
-    margin: 0; 
-  }
-
-  .materials__name {
-    font-size: 16px; 
-  }
-
-  .materials__description {
-    font-size: 14px; 
-  }
-
-  .collections__room-image {
-    height: 200px; 
-    width: 100%;
+  .collections__subtitle {
+    font-size: 72px;
   }
 }
