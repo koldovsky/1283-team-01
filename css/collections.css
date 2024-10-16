@@ -10,16 +10,16 @@
 
 .collections__lighting-solutions {
   display: flex;
-  flex-direction: column;
   gap: 50px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .collections__content {
   max-width: 600px;
   margin-right: 40px;
   text-align: left;
-  z-index: 2;
+  z-index: 1;
 }
 
 .collections__title {
@@ -46,7 +46,7 @@
 
 .collections__text {
   font-size: 18px;
-  color:  #bbbbbb;
+  color: #bbbbbb;
   margin-bottom: 30px;
   line-height: 24px;
 }
@@ -64,23 +64,23 @@
 }
 
 .materials__image {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .materials__name {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0.14px;
+  margin-bottom: 5px;
 }
 
 .materials__description {
   font-size: 16px;
   color: #bbbbbb;
-  font-weight: 400;
-  line-height: 25px;
+  line-height: 1.5;
 }
 
 .collections__image {
@@ -91,8 +91,10 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
+/* Адаптивний дизайн */
 @media (min-width: 768px) {
   .collections {
     padding: 120px 90px;
@@ -109,6 +111,16 @@
 
   .collections__subtitle {
     font-size: 64px;
+  }
+
+  .materials {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .materials__item {
+    flex: 1;
+    align-items: flex-start;
   }
 }
 
