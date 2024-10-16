@@ -10,9 +10,9 @@
 
 .collections__lighting-solutions {
   display: flex;
+  flex-direction: column;
   gap: 50px;
   align-items: flex-start;
-  flex-direction: column;
 }
 
 .collections__content {
@@ -54,34 +54,33 @@
 .materials {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .materials__item {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
-  max-width: 600px;
+  align-items: center;
 }
 
 .materials__image {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
 .materials__name {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 0.14px;
 }
 
 .materials__description {
   font-size: 16px;
   color: #bbbbbb;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 .collections__image {
@@ -110,17 +109,6 @@
 
   .collections__subtitle {
     font-size: 64px;
-  }
-
-  .materials {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .materials__item {
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
   }
 }
 
