@@ -47,7 +47,7 @@
 
 .workflow__step {
     padding-top: 30px;
-    max-width: 300px;
+    flex-basis: 99%;
 }
 
 .workflow__icon {
@@ -79,7 +79,7 @@
         flex-direction: row;
     }
     .workflow__step {
-        max-width: 200px;
+        flex-basis: 46%;
     }
 }
 
@@ -92,7 +92,7 @@
         flex-direction: row;
     }
     .workflow__step {
-        max-width: 200px;
+        flex-basis: 22%;
     }
     .workflow__subtitle {
         font-size: 4rem;  

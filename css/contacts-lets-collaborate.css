@@ -131,6 +131,10 @@
     text-align: center;
     color: var(--color-white);   
 }
+.contact__map{
+    width: 100vw;
+    height: 100vh;
+}
 .contact__map iframe{
     width: 100vw;
     height: 100vh;
