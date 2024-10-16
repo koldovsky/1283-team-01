@@ -79,7 +79,7 @@
         flex-direction: row;
     }
     .workflow__step {
-        max-width: 250px;
+        max-width: 200px;
     }
 }
 
@@ -90,9 +90,18 @@
     }
     .workflow__steps {
         flex-direction: row;
-        /*justify-content: space-between;*/
     }
     .workflow__step {
-        max-width: 250px;
+        max-width: 200px;
+    }
+    .workflow__subtitle {
+        font-size: 4rem;  
+    }
+    .workflow__step-title {
+        font-size: 1.6rem;
+    }
+    .workflow__icon {
+        width: 70px;
+        height: 70px;
     }
 }
