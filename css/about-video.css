@@ -55,4 +55,11 @@
     .workflow__video {
          min-height: 750px;
     }
+    .workflow__video-icon {
+        width: 70px;
+        height: 70px;
+    }
+    .workflow__video-title {
+        font-size: 2.3rem;
+    }
 }

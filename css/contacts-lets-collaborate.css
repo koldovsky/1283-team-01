@@ -1,12 +1,34 @@
 .collaboration-bg{
     background-color: var(--color-black);
+    position: relative;
+    z-index: -2;
+    clip-path: inset(0 0 0 0);
 }
+
+.collaboration-bg-text {
+    position: absolute;
+    position: fixed;
+    color: var(--color-black);
+    font-size: 180px;
+    font-weight: 550;
+    writing-mode: sideways-lr;
+    text-shadow: 1px 1px 0px var(--color-dark),
+        -1px -1px 0px var(--color-dark),
+        1px -1px 0px var(--color-dark),
+        -1px 1px 0px var(--color-dark);
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .collaboration{
     padding: 90px 24px;
     display: block;
     text-align: left;
     max-width: 1170px;
     margin: 0 auto;
+    z-index: 1;
 }
 .collaboration__title{
     font-size: 0.6rem;
@@ -67,12 +89,10 @@
 .contact__form{
     background-color: var(--color-dark);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;  
     padding: 50px;
 }
 .contact__form-input{
-    /*font-family: "Manrope", sans-serif;*/
     box-shadow: none;
     text-overflow: ellipsis;
     height: 50px;
@@ -87,8 +107,7 @@
     font-family: "Manrope", sans-serif;
     font-size: 0.75rem;
 }
-.contact__form-text{
-    
+.contact__form-text{  
     box-shadow: none;
     text-overflow: ellipsis;
     height: 150px;
@@ -110,9 +129,42 @@
     background-color:var(--color-main);
     padding: 20px 0 20px 0; 
     text-align: center;
-    color: var(--color-white);
-    
+    color: var(--color-white);   
 }
-.contact__map{
-    
+.contact__map iframe{
+    width: 100vw;
+    height: 100vh;
+    filter: grayscale(100%) invert(95%);   
+}
+@media only screen and (min-width: 800px){
+    .collaboration {
+        display: flex;
+        flex-direction: row;
+    }
+    .collaboration__header {
+        font-size: 3.2rem;
+    }
+    .collaboration__textpart{
+        flex-basis: 49%;
+        padding-right: 24px;
+    }
+    .contact__form{
+        flex-basis: 49%;
+    }
+    .collaboration-bg-text {
+        position: absolute;
+        position: fixed;
+        color: var(--color-black);
+        font-size: 250px;
+        font-weight: 550;
+        writing-mode: sideways-lr;
+        text-shadow: 1px 1px 0px var(--color-dark),
+            -1px -1px 0px var(--color-dark),
+            1px -1px 0px var(--color-dark),
+            -1px 1px 0px var(--color-dark);
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 }
