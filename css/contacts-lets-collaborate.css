@@ -9,8 +9,8 @@
     position: absolute;
     position: fixed;
     color: var(--color-black);
-    font-size: 100px;
-    font-weight: 400;
+    font-size: 180px;
+    font-weight: 550;
     writing-mode: sideways-lr;
     text-shadow: 1px 1px 0px var(--color-dark),
         -1px -1px 0px var(--color-dark),
