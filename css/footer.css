@@ -2,7 +2,6 @@
   background-color: var(--primary-footer-background);
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
   margin: auto;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -15,6 +14,9 @@
   .footer__company-info__logo-image {
     max-width: 157px;
     height: auto;
+  }
+  .footer__signature{
+  height: 67px;
   }
   .footer__company-info__logo-container {
     display: flex;
@@ -39,6 +41,7 @@
   .footer__signature {
     grid-column: 1/-1;
     margin-top: 80px;
+    height: 99px;
   }
   .footer__menu__column{
     display: flex;

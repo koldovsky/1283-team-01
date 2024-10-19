@@ -6,7 +6,7 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./footer.css');
-@import url('./common.css');
+@import url('./_common.css');
 @import url('./features.css');
 @import url('./features.gallery.css');
 @import url('./ourservices.css');
@@ -17,4 +17,4 @@
 @import url('./news-and-articles.css');
 @import url('./collections.css');
 @import url('./catalogs.css');
-
+@import url('./index.subscribe-now.css');
