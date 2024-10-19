@@ -16,6 +16,30 @@
 <body>
     <div class="hero-wrap header--dark">
         <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/header.partial.html"></header>
+        <section class="hero-single" style="background-image: url('../img/bg-hero-about.webp');">
+            <div class="container">
+                <h1>About Us</h1>
+        
+                <ol class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope=""
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="/">
+                            <span itemprop="name">Home</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>›
+                    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope=""
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="/about-us">
+                            <span itemprop="name">
+                                About Us
+                            </span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
     </div>
     <!-- Our Services section by Borys -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/ourservices.partial.html"></section>
