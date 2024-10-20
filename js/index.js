@@ -1,6 +1,6 @@
 
 // Toggle Mob Menu
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const nav_toggle = document.querySelectorAll('.menu__toggle');
     const nav = document.querySelector('.drawer');
     const link = document.querySelectorAll('.drawer__nav a');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         el.addEventListener('click', function (event) {
             nav.classList.toggle('drawer--show');
             this.classList.toggle('menu__toggle-active');
-            event.stopPropagation(); 
+            event.stopPropagation();
             alert('click');
         });
     });
@@ -19,5 +19,5 @@ document.addEventListener('DOMContentLoaded', function() {
             nav.classList.remove('drawer--show');
         });
     });
-    
+
 });
