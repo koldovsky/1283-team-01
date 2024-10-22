@@ -15,3 +15,17 @@ var max = function(list){
     return list[0];
 }
 
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+function min(arr, toReturn) {
+    let smallestValue = arr[0];
+    let smallestIndex = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < smallestValue) {
+            smallestValue = arr[i];
+            smallestIndex = i;
+        }
+    }
+
+    return toReturn === "value" ? smallestValue : smallestIndex;
+}
