@@ -44,3 +44,43 @@ function DNAtoRNA(dna) {
 
     return rna;
 }
+
+// You Can't Code Under Pressure #1
+function doubleInteger(i) {
+  return i*2;
+}
+
+// Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  const twiceAgeOfSun=sonYearsOld*2;
+  return Math.abs(dadYearsOld-twiceAgeOfSun);
+}
+
+// Return n-th even number
+function nthEven(n){
+  // your code here
+  if(n>0){
+  return (n-1)*2;
+    }else{
+      return "Wrong Value!";
+    }
+}
+
+
+// What's the real floor
+function getRealFloor(n) {
+  if(n<=0){
+    return n;
+  }
+  return n > 13 ? n - 2 : --n;
+}
+
+// Clock
+function past(h, m, s){
+  return (h*3600000)+(m*60000)+(s*1000);
+}
+
+//Is n divisible by x and y
+function isDivisible(n, x, y) {
+  return n%x===0 && n%y===0;
+}
