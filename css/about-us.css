@@ -1,8 +1,11 @@
 @import url('./_base.css');
 @import url('./_vars.css');
+@import url('./_text.css');
 @import url('./_common.css');
 @import url('./_soc.css');
+@import url('./_breadcrumbs.css');
 @import url('./header.css');
+@import url('./hero-single.css');
 @import url('./about-our-workflow.css');
 @import url('./about-video.css');
 @import url('./our-designers.css');
