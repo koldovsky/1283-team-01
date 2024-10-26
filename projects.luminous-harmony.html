@@ -20,32 +20,29 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="luminous">
       <header
         class="header"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="partials/header.partial.html"
       ></header>
-      <section class="breadcrumbs">
-        <h1 class="breadcrumbs__title">Luminous Harmony</h1>
-        <div class="breadcrumbs__path">
-          <p class="breadcrumbs__item">Home</p>
-          <p class="breadcrumbs__separator">></p>
-          <p class="breadcrumbs__item">Projects</p>
-          <p class="breadcrumbs__separator">></p>
-          <p class="breadcrumbs__current">Luminous Harmony</p>
+      <div class="bcr container">
+        <p class="bcr__title">Luminous Harmony</p>
+        <div class="bcr__path">
+          <p class="bcr__item">Home > Projects > </p>
+          <p class="bcr__current">Luminous Harmony</p>
         </div>
-      </section>
+      </div>
 
       <main class="main-content">
-        <section class="project">
+        <div class="project container">
           <div class="project__images">
             <img src="img/index-projects-img-04.jpg" alt="lamp" class="project__image" />
             <img
               src="img/index-projects-img-03.jpg"
               alt="A bed with bedside tables on either side. There is a lamp on each of the bedside tables."
-              class="project__image"
+              class="project__image2"
             />
           </div>
           <div class="project__details">
@@ -56,9 +53,9 @@
             <p class="project__details-title">Date:</p>
             <p class="project__details-value">April, 2024</p>
           </div>
-        </section>
+        </div>
 
-        <section class="overview">
+        <div class="overview container">
           <div class="overview__header">
             <h3 class="overview__title">Brief Overview:</h3>
           </div>
@@ -68,9 +65,9 @@
               implemented at the prestigious Riverfront Hotel in Chicago...
             </p>
           </div>
-        </section>
+        </div>
 
-        <section class="features">
+        <div class="features container">
           <div class="features__header">
             <h3 class="features__title">Key Features:</h3>
           </div>
@@ -85,9 +82,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
 
-        <section class="technical-details">
+        <div class="technical-details container">
           <div class="technical-details__header">
             <h3 class="technical-details__title">Technical Details:</h3>
           </div>
@@ -105,9 +102,9 @@
               Specially designed to withstand extreme weather, ensuring durability and consistent performance;
             </p>
           </div>
-        </section>
+        </div>
 
-        <section class="testimonial">
+        <div class="testimonial container">
           <img
             src="img/emma-img.png"
             alt="A dark-haired young woman touches her head with her palm."
@@ -118,9 +115,9 @@
           </p>
           <p class="testimonial__author">— Emma Carter, CEO,</p>
           <p class="testimonial__company">Riverfront Hotel.</p>
-        </section>
+        </div>
 
-        <section class="cta">
+        <div class="cta container">
           <div class="cta__header">
             <h2 class="cta__subtitle">/ cta /</h2>
           </div>
@@ -131,7 +128,7 @@
           <div>
             <a href="/contacts.html" class="cta__button">Contact us</a>
           </div>
-        </section>
+        </div>
       </main>
 
       <footer
