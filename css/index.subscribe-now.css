@@ -6,6 +6,9 @@
     color: #fff;
     padding: 40px 20px;
     text-align: center;
+    position: relative; 
+    z-index: 1; 
+    margin-bottom: 40px; 
  }
  
  .subscribe-now__content {
