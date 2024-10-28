@@ -4,6 +4,11 @@
   font-family: "Manrope", sans-serif;
 }
 
+.container {
+  margin: auto;
+  max-width: 1550px;
+}
+
 .bcr {
   display: flex;
   flex-direction: column;
@@ -49,17 +54,27 @@
   }
 }
 
-.container {
-  margin: auto;
-  max-width: 1550px;
-}
-
 .project {
-  display: flex;
-  flex-direction: column;
   gap: var(--gap16);
   min-height: 805px;
   font-size: 22px;
+
+  .project__images {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap16);
+    max-width: 100%;
+
+
+    .project__image {
+      max-width: 30%;
+    }
+
+    .roundish {
+      border-radius: 0 50% 0 0;
+      overflow: hidden;
+    }
+  }
 
   .project__details {
     display: flex;
@@ -82,22 +97,12 @@
       }
     }
   }
-
-  .project__images {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap16);
-
-    .project__image2 {
-      border-radius: 0 50% 0 0;
-      overflow: hidden;
-    }
-  }
 }
 
-@media (min-weidht: 767px) {
+@media (min-width: 767px) {
   .project__images {
     flex-direction: row;
     justify-content: space-around;
+    max-width: 100%;
   }
 }
