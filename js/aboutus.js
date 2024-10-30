@@ -41,7 +41,6 @@ const contents = [
     }
  ];
 
-
 function renderContents(contents) {
   let leftHtml = '';
   let rightHtml = '';
