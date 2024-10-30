@@ -6,11 +6,20 @@
     font-size: 12px;
 }
 
+h1 {
+    color: var(--color-main);
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--gap16);
+}
+
 .h1 {
     font-size: 76px;
     font-weight: 600;
     line-height: 1;
     margin-bottom: var(--gap24);
+    color: var(--color-white);
 }
 
 .h4 {

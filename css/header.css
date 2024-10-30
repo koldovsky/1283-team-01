@@ -66,6 +66,11 @@
     margin-left: auto;
 }
 
+.header--dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
 .menu {
     display: flex;
     gap: var(--gap24);

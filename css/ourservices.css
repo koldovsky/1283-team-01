@@ -22,7 +22,6 @@
 
 .ourservices__content {
     color: var(--color-white);
-    margin-bottom: var(--gap30);
 }
 
 .ourservices__description--highlight {
@@ -43,7 +42,7 @@
 }
 
 @media (min-width: 769px) {
-    .ourservices{
+    .ourservices {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

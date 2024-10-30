@@ -8,6 +8,7 @@
   --color-light: #e9bf97;
   --color-lightgrey: #e1e1e1;
   --color-gray: #bbbbbb;
+  --color-black-alpha-700: rgba(0, 0, 0, 0.7);
   --divider-color:#3d3d3d;
   --border-color:#39393a;
   --secondary-divider-color:#f1d1af;
@@ -18,21 +19,29 @@
   --gap0: 0px;
   --gap8: 8px;
   --gap10: 10px;
+  --gap14: 14px;
   --gap16: 16px;
   --gap19: 19px;
   --gap20: 20px;
   --gap24: 24px;
+  --gap25: 25px;
   --gap26: 26px;
   --gap30: 30px;
   --gap32: 32px;
+  --gap35: 35px;
   --gap40: 40px;
   --gap48: 48px;
+  --gap50: 50px;
+  --gap51: 51px;
   --gap56: 56px;
+  --gap60: 60px;
   --gap62: 62px;
   --gap64: 64px;
   --gap72: 72px;
   --gap80: 80px;
   --gap90: 90px;
+  --gap105: 105px;
+  --gap120: 120px;
   --gap600: 600px;
   --trs: all 0.3s ease-in-out;
 

@@ -1,43 +1,209 @@
-.breadcrumbs__title {
-  font-family: "Manrope", Arial, sans-serif;
-  font-size: 62px;
-  color: var(--color-main);
-  font-weight: 400;
-  max-width: 100%;
-  margin-bottom: 10px;
+.luminous {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
 }
 
-.breadcrumbs__item {
-  font-family: "Manrope", Arial, sans-serif;
-  color: var(--color-gray);
-  font-size: 10px;
+@media (min-width: 767px) {
+  .luminous {
+    padding: 0px 40px;
+  }
 }
 
-breadcrumbs__separator {
-  font-family: "Manrope", Arial, sans-serif;
-  color: var(--color-gray);
-  font-size: 10px;
+.container {
+  margin: auto;
+  max-width: 1200px;
 }
 
-.breadcrumbs__current {
-  font-family: "Manrope", Arial, sans-serif;
-  text-transform: uppercase;
-  color: var(--color-white);
-  font-weight: bold;
-  text-decoration: underline;
-  font-size: 10px;
+.bcr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/luminous-beckgr1.png");
+  background-size: auto 100%;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  gap: var(--gap16);
+
+  .bcr__title {
+    font-size: 40px;
+    color: var(--color-main);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .bcr__path {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .bcr__item {
+    color: var(--color-gray);
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .bcr__current {
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    font-size: 10px;
+  }
 }
 
-.project__details-title {
-  font-family: "Manrope", Arial, sans-serif;
-  color: var(--secondary-divider-color);
-  font-weight: bold;
-  font-size: 24px;
+.project {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+
+  .project__images {
+    .project__image {
+      max-width: 100%;
+      margin-top: 50px;
+      max-height: 370px;
+    }
+
+    .roundish {
+      border-radius: 0 50% 0 0;
+      overflow: hidden;
+    }
+  }
+
+  .project__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0px;
+
+    .project__part {
+      text-align: left;
+      font-weight: 500;
+      font-size: 24px;
+
+      .project__details-value {
+        color: var(--color-white);
+        display: inline;
+      }
+
+      .project__details-title {
+        color: var(--secondary-divider-color);
+        display: inline;
+      }
+    }
+  }
 }
 
-.project__details-value {
-  font-family: "Manrope", Arial, sans-serif;
-  color: var(--color-white);
-  font-weight: bold;
-  font-size: 24px;
+@media (min-width: 767px) {
+  .project__images {
+    display: grid;
+    gap: var(--gap16);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project__details {
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    flex: 1;
+    align-items: center;
+  }
+
+  .roundish {
+    border-radius: 0 30% 0 0 !important;
+    overflow: hidden;
+  }
+}
+
+.testimonial__image {
+  max-width: 300px;
+}
+
+.top {
+  font-size: 30px;
+  margin: 50px 0px;
+}
+
+.overview {
+  .overview__text {
+    color: var(--color-lightgrey);
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+    margin: 25px 0px;
+  }
+
+  .bigger {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 767px) {
+  .overview {
+    display: grid;
+    gap: var(--gap16);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.features {
+  margin-bottom: 50px;
+  .features__items {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .features__item {
+    position: relative;
+    color: var(--color-gray);
+    font-size: 14px;
+    padding: 16px 0px 0px 30px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  .features__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/done.svg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 767px) {
+  .features {
+    display: grid;
+    gap: var(--gap16);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.technical-details {
+  .technical-details__content {
+    font-size: 16px;
+
+    .technical-details__subtitle {
+      display: inline;
+      font-weight: 700;
+    }
+
+    .technical-details__text {
+      display: inline;
+      color: var(--color-lightgrey);
+      font-weight: 400;
+      line-height: 23px;
+    }
+  }
 }

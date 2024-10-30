@@ -54,4 +54,5 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:not
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
