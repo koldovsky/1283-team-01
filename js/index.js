@@ -1,5 +1,5 @@
 function init() {
-    import('./index.header-menu.js');
+    import('./header-menu.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
