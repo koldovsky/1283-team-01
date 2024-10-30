@@ -120,7 +120,7 @@
   position: absolute;
   top: 50%;
   width: 30px;
-  fill: #e1e1e1;
+  fill: #bbbbbb;
 }
 .carousel__button--previous {
   left: -60px;
@@ -129,9 +129,8 @@
   right: -60px;
 }
 .carousel__button:hover {
-  fill: #f3f3f3;
+  fill: #bbbbbb;
   cursor: pointer;
   transition: fill 1s;
 }
-.carousel__item {
-}
+
