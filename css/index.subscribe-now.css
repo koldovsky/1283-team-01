@@ -42,7 +42,7 @@
      gap: 10px;
  }
  
- .subscribe-now__form-input {
+ .subscribe-now__input {
      padding: 10px;
      font-size: 1rem;
      border: 1px solid #444;
@@ -55,7 +55,7 @@
      /* box-shadow: none; Додаємо для видалення можливих тіней */
  }
  
-   .subscribe-now__form-button {
+   .subscribe-now__button {
      padding: 10px;
      font-size: 1rem;
      background-color: #d78c43;
@@ -66,7 +66,7 @@
      transition: background-color 0.3s;
    }
  
-   .subscribe-now__form-button:hover {
+   .subscribe-now__button:hover {
      background-color: #ffa500;
    }
    
@@ -90,7 +90,7 @@
        max-width: none;
      }
    
-     .subscribe-now__form-input {
+     .subscribe-now__input {
        flex: 1;
        margin-right: 10px;
      }
