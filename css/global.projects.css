@@ -65,21 +65,34 @@
             }
         }
 
-        .projects__images{
+        .projects__carousel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 290px;
+        }
+        .projects__carousel-viewport {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .projects__carousel-container {
             display: flex;
-            flex-direction: column;
-
-            .projects__image-wrapper{
-                margin: 0 0 50px;
- 
-                .projects__image{
-                    width: 100%;
-                }
-            }
-            
-            .projects__image-wrapper:last-child{
-                margin: 0;
-            }
+            height: 100%;
+            align-items: center;
+        }
+        .projects__slide {
+            margin: 0 5px;
+            flex: 0 0 auto;
+        }
+        .projects__image {
+            transition: transform 0.3s ease;
+            width: 270px;
+            height: auto;
+        }
+        .projects__image:hover {
+            transform: scale(1.03);
         }
     }
 
