@@ -84,11 +84,11 @@
        text-align: left;
      }
    
-     .subscribe-now__form {
+     /* .subscribe-now__form {
        flex-direction: row;
        flex: 1;
        max-width: none;
-     }
+     } */
    
      .subscribe-now__input {
        flex: 1;
