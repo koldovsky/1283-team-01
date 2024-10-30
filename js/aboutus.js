@@ -1,4 +1,4 @@
-const response = [
+const contents = [
     {
        "type":"contents",
        "id":"1",
