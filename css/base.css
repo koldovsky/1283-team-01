@@ -51,3 +51,8 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:not
   box-shadow: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
