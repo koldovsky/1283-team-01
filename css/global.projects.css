@@ -4,8 +4,8 @@
     .projects__item{
         display: flex;
         flex-direction: column;
-        padding: 0 0 65px;
-        margin: 75px 0 0;
+        padding: 0 0 40px;
+        margin: 50px 0 0;
         border-bottom: 1px solid var(--border-color);
 
         .projects__details{
@@ -38,7 +38,7 @@
             }
 
             .projects__description{
-                margin: 0 0 50px;
+                margin: 0 0 30px;
 
                 .projects__text{
                     font-family: "Manrope", Arial, sans-serif;
@@ -52,7 +52,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                margin: 0 0 90px;
+                margin: 0 0 30px;
 
                 .projects__btn-arrow{
                     text-decoration: none;
@@ -70,7 +70,7 @@
             position: relative;
             width: 100%;
             max-width: 1200px;
-            height: 290px;
+            height: 220px;
         }
         .projects__carousel-viewport {
             overflow: hidden;
@@ -88,7 +88,7 @@
         }
         .projects__image {
             transition: transform 0.3s ease;
-            width: 270px;
+            width: 200px;
             height: auto;
         }
         .projects__image:hover {
@@ -132,13 +132,12 @@
             }
         }
 
-        .projects__item .projects__images{
-            flex-direction: row;
+        .projects__item .projects__carousel{
+            height: 250px;
+        }
 
-            .projects__image-wrapper{
-                margin: 0 15px;
-            }
-
+        .projects__item .projects__image{
+            width: 235px;
         }
     }
 }
@@ -168,6 +167,14 @@
             justify-content: flex-end;
             width: 17%;
             margin: 0;
+        }
+
+        .projects__item .projects__carousel{
+            height: 290px;
+        }
+
+        .projects__item .projects__image{
+            width: 270px;
         }
     } 
 }
