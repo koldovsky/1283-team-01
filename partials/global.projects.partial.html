@@ -33,22 +33,22 @@
             <div class="projects__carousel-viewport">
                 <div class="projects__carousel-container">
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-01.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-01.jpg" alt="Modern living room with cozy lighting, soft sofas, and decorative elements.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-02.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-02.jpg" alt="Stylish floor lamp with a black lampshade in a minimalist interior.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-01.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-01.jpg" alt="Modern living room with cozy lighting, soft sofas, and decorative elements.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-02.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-02.jpg" alt="Stylish floor lamp with a black lampshade in a minimalist interior.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-01.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-01.jpg" alt="Modern living room with cozy lighting, soft sofas, and decorative elements.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-02.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-02.jpg" alt="Stylish floor lamp with a black lampshade in a minimalist interior.">
                     </div>
                 </div>
             </div>
@@ -88,25 +88,46 @@
             <div class="projects__carousel-viewport">
                 <div class="projects__carousel-container">
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-03.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-03.jpg" alt="A cozy bedroom in warm tones with soft lighting, a large bed with pillows, bedside tables with lamps, and a modern pendant light above the bed.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-04.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-04.jpg" alt="Elegant table lamp with a gold base and white lampshade, emitting a soft warm light against a dark background.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-03.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-03.jpg" alt="A cozy bedroom in warm tones with soft lighting, a large bed with pillows, bedside tables with lamps, and a modern pendant light above the bed.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-04.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-04.jpg" alt="Elegant table lamp with a gold base and white lampshade, emitting a soft warm light against a dark background.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-03.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-03.jpg" alt="A cozy bedroom in warm tones with soft lighting, a large bed with pillows, bedside tables with lamps, and a modern pendant light above the bed.">
                     </div>
                     <div class="projects__slide">
-                        <img class="projects__image" src="/img/index-projects-img-04.jpg" alt="Placeholder image">
+                        <img class="projects__image" src="./img/index-projects-img-04.jpg" alt="Elegant table lamp with a gold base and white lampshade, emitting a soft warm light against a dark background.">
                     </div>
                 </div>
             </div>
         </div>
     </article>
 </section>
+
+<div class="projects__modal" id="projects__imageModal" style="display: none;">
+    <span class="projects__close">&times;</span>
+    <div class="projects__modal-content">
+        <img class="projects__modal-image" id="projects__modalImage" src="" alt="Modal Image">
+        <div class="projects__modal-navigation">
+            <button class="projects__modal-prev" aria-label="Previous Image">
+                <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-left" viewBox="0 0 24 24">
+                    <path d="M24,12A12,12,0,1,0,12,24,12.013,12.013,0,0,0,24,12ZM2,12A10,10,0,1,1,12,22,10.011,10.011,0,0,1,2,12Z"/>
+                    <path d="M8,12a2.993,2.993,0,0,1,.752-1.987c.291-.327.574-.637.777-.84L12.353,6.3a1,1,0,0,1,1.426,1.4L10.95,10.58c-.187.188-.441.468-.7.759a1,1,0,0,0,0,1.323c.258.29.512.57.693.752L13.779,16.3a1,1,0,0,1-1.426,1.4L9.524,14.822c-.2-.2-.48-.507-.769-.833A2.99,2.99,0,0,1,8,12Z"/>
+                </svg>
+            </button>
+            <button class="projects__modal-next" aria-label="Next Image">
+                <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-right" viewBox="0 0 24 24">
+                    <path d="M0,12A12,12,0,1,0,12,0,12.013,12.013,0,0,0,0,12Zm22,0A10,10,0,1,1,12,2,10.011,10.011,0,0,1,22,12Z"/>
+                    <path d="M16,12a2.993,2.993,0,0,1-.752,1.987c-.291.327-.574.637-.777.84L11.647,17.7a1,1,0,1,1-1.426-1.4L13.05,13.42c.187-.188.441-.468.7-.759a1,1,0,0,0,0-1.323c-.258-.29-.512-.57-.693-.752L10.221,7.7a1,1,0,1,1,1.426-1.4l2.829,2.879c.2.2.48.507.769.833A2.99,2.99,0,0,1,16,12Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
