@@ -73,7 +73,6 @@
 }
 .catalog__item-title {
   font-size: 26px;
-  border: 0;
   padding-bottom: 15px;
 }
 .catalog__item-description {
@@ -135,4 +134,22 @@
 }
 .carousel__item img {
   width: 100%;
+}
+.catalog__item-title {
+  padding-top: 20px;
+  font-size: 26px;
+  color: #ffffff;
+}
+.carousel__item-category {
+  font-size: 10px;
+  color: #f1d1af;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.carousel__item-year {
+  font-size: 10px;
+  color: #bbbbbb;
+  padding-top: 15px;
+  font-weight: bold;
 }
