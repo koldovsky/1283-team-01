@@ -22,7 +22,6 @@
   min-height: 250px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/luminous-beckgr1.png");
-  background-size: auto 100%;
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -109,11 +108,18 @@
     display: grid;
     gap: var(--gap16);
     grid-template-columns: 1fr 1fr;
+    justify-items: center; /* Центрирование по горизонтали */
+    align-items: center; 
+  }
+
+  .roundish {
+    width: 90%;
+
   }
 
   .project__details {
     flex-direction: row !important;
-    justify-content: space-around !important;
+    justify-content: center;
     flex: 1;
     align-items: center;
   }
@@ -205,6 +211,14 @@
   }
 }
 
+@media (min-width: 767px) {
+  .technical-details {
+    display: grid;
+    gap: var(--gap16);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .testimonial__image {
   width: 120px;
   height: 120px;
@@ -253,6 +267,19 @@
   }
 }
 
+
+@media (min-width: 767px) {
+  .testimonial__grid {
+    display: grid;
+    gap: var(--gap16);
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonial__end {
+    text-align: right !important;
+    padding-bottom: 50px;
+  }
+}
+
 .cta {
   max-height: 624px;
   background-color: rgba(0, 0, 0, 0);
@@ -266,7 +293,7 @@
   padding: 80px 25px;
   text-align: center;
 
-  .cta__text {
+  .cta__block {
     padding: 25px 0px;
     .cta__subtitle {
       color: var(--color-main);
@@ -306,11 +333,15 @@
       justify-content: center;
       width: 100%;
       height: 100%;
-
     }
   }
 }
 
+@media (min-width: 767px) {
+  .cta__main {
+    gap: 50px;
+  }
+}
 .line {
   display: block;
   margin: auto;

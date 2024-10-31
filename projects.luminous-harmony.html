@@ -22,7 +22,7 @@
         data-hx-swap="outerHTML"
         data-hx-get="partials/header.partial.html"
       ></header>
-      <div class="bcr container">
+      <div class="bcr">
         <p class="bcr__title">Luminous Harmony</p>
         <div class="bcr__path">
           <p class="bcr__item">Home > Projects ></p>
@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <svg width="3000px" height="31" style="width: 100%">
+        <svg max-width="3000px" height="31" style="width: 100%" class="line container">
           <path
             d="M0 15.5 L3000 15.5"
             style="
@@ -100,7 +100,7 @@
             </p>
           </div>
         </div>
-        <svg width="3000px" height="31" style="width: 100%">
+        <svg max-width="3000px" height="31" style="width: 100%" class="line container">
           <path
             d="M0 15.5 L3000 15.5"
             style="
@@ -146,33 +146,35 @@
           <div class="technical-details__header top">
             <p class="technical-details__title">Technical Details:</p>
           </div>
-          <div class="technical-details__content">
-            <p class="technical-details__subtitle">LED Panels:</p>
-            <p class="technical-details__text">
-              High-efficiency panels with adjustable color temperatures ranging
-              from 2700K to 6500K;
-            </p>
-          </div>
-          <div class="technical-details__content">
-            <p class="technical-details__subtitle">
-              Motion-Sensor LED Pathways:
-            </p>
-            <p class="technical-details__text">
-              Automatically adjust lighting based on occupancy, reducing energy
-              usage by up to 40%;
-            </p>
-          </div>
-          <div class="technical-details__content">
-            <p class="technical-details__subtitle">
-              Weather-Proof Outdoor Fixtures:
-            </p>
-            <p class="technical-details__text">
-              Specially designed to withstand extreme weather, ensuring
-              durability and consistent performance;
-            </p>
+          <div class="technical-details__block">
+            <div class="technical-details__content">
+              <p class="technical-details__subtitle">LED Panels:</p>
+              <p class="technical-details__text">
+                High-efficiency panels with adjustable color temperatures ranging
+                from 2700K to 6500K;
+              </p>
+            </div>
+            <div class="technical-details__content">
+              <p class="technical-details__subtitle">
+                Motion-Sensor LED Pathways:
+              </p>
+              <p class="technical-details__text">
+                Automatically adjust lighting based on occupancy, reducing energy
+                usage by up to 40%;
+              </p>
+            </div>
+            <div class="technical-details__content">
+              <p class="technical-details__subtitle">
+                Weather-Proof Outdoor Fixtures:
+              </p>
+              <p class="technical-details__text">
+                Specially designed to withstand extreme weather, ensuring
+                durability and consistent performance;
+              </p>
+            </div>
           </div>
         </div>
-        <svg width="3000px" height="31" style="width: 100%">
+        <svg max-width="3000px" height="31" style="width: 100%" class="line container">
           <path
             d="M0 15.5 L3000 15.5"
             style="
@@ -183,6 +185,7 @@
           ></path>
         </svg>
         <div class="testimonial container">
+          <div class="testimonial__grid">
           <img
             src="img/emma-img.png"
             alt="A dark-haired young woman touches her head with her palm."
@@ -195,6 +198,7 @@
             significantly enhanced both the guest experience and our brand's
             aesthetic appeal."
           </p>
+        </div>
           <div class="testimonial__end">
             <p class="testimonial__author">— Emma Carter, CEO,</p>
             <p class="testimonial__company">Riverfront Hotel.</p>
@@ -203,7 +207,7 @@
         </div>
 
         <div class="cta">
-          <div class="cta__text">
+          <div class="cta__block">
             <div class="cta__header">
               <p class="cta__subtitle">/ cta /</p>
             </div>
