@@ -124,10 +124,6 @@
   }
 }
 
-.testimonial__image {
-  max-width: 300px;
-}
-
 .top {
   font-size: 30px;
   margin: 50px 0px;
@@ -193,6 +189,7 @@
 .technical-details {
   .technical-details__content {
     font-size: 16px;
+    padding: 16px 0px;
 
     .technical-details__subtitle {
       display: inline;
@@ -206,4 +203,115 @@
       line-height: 23px;
     }
   }
+}
+
+.testimonial__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (min-width: 767px) {
+  .testimonial__image {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.testimonial {
+  padding: 25px 25px;
+
+  .testimonial__text {
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    line-height: 31px;
+    padding: 50px 0px;
+  }
+
+  .testimonial__end {
+    text-align: center;
+
+    .testimonial__author {
+      display: inline;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .testimonial__company {
+      display: inline;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-main);
+    }
+  }
+}
+
+.cta {
+  max-height: 624px;
+  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/cta.png");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  padding: 80px 25px;
+  text-align: center;
+
+  .cta__text {
+    padding: 25px 0px;
+    .cta__subtitle {
+      color: var(--color-main);
+      font-size: 10px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 25px;
+    }
+
+    .cta__main {
+      .cta__title {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      .cta__text {
+        color: var(--color-lightgrey);
+        font-size: 19px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .cta__button {
+    display: block;
+    background-color: var(--color-main);
+    width: 114px;
+    height: 47px;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 600;
+
+    .cta__button2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+}
+
+.line {
+  display: block;
+  margin: auto;
 }
