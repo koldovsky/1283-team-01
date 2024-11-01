@@ -85,6 +85,7 @@
         .projects__slide {
             margin: 0 5px;
             flex: 0 0 auto;
+            cursor: pointer;
         }
         .projects__image {
             transition: transform 0.3s ease;
