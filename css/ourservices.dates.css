@@ -1,7 +1,7 @@
 .ourservices-dates {
     padding-top: var(--gap30);
     padding-bottom: var(--gap30);
-    background-color: var(--color-for-ourservices);
+    background-color: var(--color-divider-dark);
 }
 
 .ourservices-dates__list {
