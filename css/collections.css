@@ -8,9 +8,9 @@
   gap: 40px;
 }
 
-.collections__lighting-solutions {
+.collections__lighting-solutions container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "content"
     "image";
@@ -88,6 +88,7 @@
 
 .collections__image {
   grid-area: image;
+  height: 100%;
   width: 100%;
 }
 
