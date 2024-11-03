@@ -55,13 +55,13 @@
 
 .materials {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 20px; 
 }
 
 .materials__item {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 70px 1fr; 
+  gap: 20px; 
   align-items: start;
 }
 
