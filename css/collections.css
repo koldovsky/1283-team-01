@@ -8,10 +8,8 @@
 .collections__lighting-solutions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  align-items: stretch;
-  width: 100%;
-  height: 100vh;
+  gap: 60px;
+  align-items: stretch; 
 }
 
 .collections__content {
@@ -90,9 +88,8 @@
 .collections__room-image {
   grid-column: 2;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: 100%; 
+  object-fit: cover; 
 }
 
 @media (max-width: 768px) {
@@ -107,15 +104,15 @@
 
   .collections__content {
     grid-row: 1;
-    max-width: 100%;
+    max-width: 100%; 
   }
 
   .collections__title {
-    font-size: 8px;
+    font-size: 8px; 
   }
 
   .collections__subtitle {
-    font-size: 24px;
+    font-size: 24px; 
   }
 
   .collections__description {
@@ -123,7 +120,7 @@
   }
 
   .collections__text {
-    font-size: 14px;
+    font-size: 14px; 
   }
 
   .collections__room-image {
@@ -152,8 +149,7 @@
   .collections__room-image {
     grid-column: 2;
     width: 100%;
-    height: 100%;
+    margin-top: 0;
     object-fit: cover;
-    object-position: center;
   }
 }
