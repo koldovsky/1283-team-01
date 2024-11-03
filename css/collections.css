@@ -126,6 +126,7 @@
   .collections__room-image {
     grid-row: 2;
     width: 100%;
+    height: auto;
     margin-top: 10px;
     object-fit: cover;
   }
