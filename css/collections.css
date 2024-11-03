@@ -1,10 +1,10 @@
 .collections {
   background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: "Manrope", sans-serif;
   padding: 90px 30px;
   display: grid;
   grid-template-columns: 1fr;
-  color: var(--color-white);
-  font-family: "Manrope", sans-serif;
   gap: 40px;
 }
 
@@ -18,7 +18,6 @@
 .collections__content {
   max-width: 600px;
   text-align: left;
-  z-index: 2;
 }
 
 .collections__title {
@@ -57,9 +56,10 @@
 }
 
 .materials__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr; 
   gap: 20px;
-  align-items: center;
+  align-items: start;
 }
 
 .materials__image {
@@ -72,7 +72,7 @@
   font-size: 22px;
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .materials__description {
@@ -80,6 +80,7 @@
   color: var(--color-gray);
   font-weight: 400;
   line-height: 25px;
+  margin-top: 5px;
 }
 
 .collections__image {
@@ -94,7 +95,7 @@
 
 @media (min-width: 768px) {
   .collections__lighting-solutions {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
     gap: 60px;
   }
 
@@ -108,6 +109,13 @@
 
   .collections__subtitle {
     font-size: 64px;
+  }
+
+  .materials__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
   }
 }
 
@@ -123,12 +131,12 @@
 
 @media (max-width: 767px) {
   .collections {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     padding: 60px 20px;
   }
 
   .collections__lighting-solutions {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
 
   .collections__content {
@@ -137,5 +145,11 @@
 
   .collections__subtitle {
     font-size: 32px;
+  }
+
+  .materials__item {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
