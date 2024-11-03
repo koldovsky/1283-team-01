@@ -57,10 +57,10 @@
 }
 
 .materials__item {
-  display: grid;
-  grid-template-columns: auto 1fr; 
-  gap: 20px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 10px;
 }
 
 .materials__image {
@@ -97,7 +97,7 @@
   .collections {
     padding: 120px 90px;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start; 
   }
 
   .collections__content {
