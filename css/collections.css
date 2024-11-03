@@ -53,10 +53,9 @@
 }
 
 .materials__item {
-  display: grid;
-  grid-template-columns: auto 1fr; 
+  display: flex;
+  align-items: flex-start;
   gap: 20px;
-  align-items: start;
 }
 
 .materials__image {
@@ -98,7 +97,7 @@
 
 @media (min-width: 768px) {
   .collections__lighting-solutions {
-    grid-template-columns: 1fr 1fr; /* Текст ліворуч, зображення праворуч */
+    grid-template-columns: 1fr 1fr; 
     gap: 60px;
   }
 
@@ -127,7 +126,7 @@
 
 @media (max-width: 767px) {
   .collections__lighting-solutions {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
 
   .collections__content {
@@ -139,13 +138,11 @@
   }
 
   .materials__item {
-    grid-template-columns: 1fr;
-    gap: 10px;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .collections__image {
-    order: 2;
+    order: 2; 
   }
 }
