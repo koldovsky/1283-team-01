@@ -96,10 +96,13 @@
 
 @media (min-width: 768px) {
   .collections__lighting-solutions {
-    grid-template-columns: 1fr 1fr; 
-    gap: 60px;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
   }
-
+  .collections__room-image {
+    grid-column: 2;
+  }
+  
   .collections {
     padding: 120px 90px;
   }
