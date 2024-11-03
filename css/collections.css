@@ -88,7 +88,6 @@
 
 .collections__image {
   grid-area: image;
-  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,6 +138,20 @@
 
   .collections__subtitle {
     font-size: 72px;
+  }
+
+  .collections__image {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collections__room-image {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
