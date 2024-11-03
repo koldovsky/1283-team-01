@@ -2,10 +2,10 @@
   background-color: var(--color-black);
   padding: 90px 30px;
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   color: var(--color-white);
   font-family: "Manrope", sans-serif;
-  gap: 40px; 
+  gap: 40px;
 }
 
 .collections__lighting-solutions {
@@ -57,7 +57,8 @@
 }
 
 .materials__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr; 
   gap: 20px;
   align-items: center;
 }
@@ -72,7 +73,7 @@
   font-size: 22px;
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: 0.14px;
+  margin-bottom: 5px;
 }
 
 .materials__description {
@@ -95,7 +96,7 @@
 @media (min-width: 768px) {
   .collections {
     padding: 120px 90px;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
@@ -120,7 +121,7 @@
 
 @media (max-width: 767px) {
   .collections {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     padding: 60px 20px;
   }
 
@@ -130,5 +131,9 @@
 
   .collections__subtitle {
     font-size: 32px;
+  }
+
+  .materials__item {
+    grid-template-columns: 1fr;
   }
 }
