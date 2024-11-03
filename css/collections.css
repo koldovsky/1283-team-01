@@ -1,10 +1,11 @@
+
 .collections {
-  background-color: #0d0d0d;
+  background-color: var(--color-black);
   padding: 90px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
+  color: var(--color-white);
   font-family: "Manrope", sans-serif;
 }
 
@@ -24,7 +25,7 @@
 
 .collections__title {
   font-size: 10px;
-  color: #d78c43;
+  color: var(--color-main);
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -34,19 +35,19 @@
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .collections__description {
   font-size: 19px;
-  color: #e1e1e1;
+  color: var(--color-lightgrey);
   margin-bottom: 20px;
   line-height: 26px;
 }
 
 .collections__text {
   font-size: 18px;
-  color:  #bbbbbb;
+  color: var(--color-gray);
   margin-bottom: 30px;
   line-height: 24px;
 }
@@ -72,13 +73,13 @@
 .materials__name {
   font-size: 22px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 0.14px;
 }
 
 .materials__description {
   font-size: 16px;
-  color: #bbbbbb;
+  color: var(--color-gray);
   font-weight: 400;
   line-height: 25px;
 }
