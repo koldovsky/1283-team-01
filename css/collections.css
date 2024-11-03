@@ -1,24 +1,23 @@
 .collections {
   background-color: var(--color-black);
-  padding: 90px 30px;
-  display: grid;
-  grid-template-columns: 1fr; /* Одноколонний макет за замовчуванням */
   color: var(--color-white);
   font-family: "Manrope", sans-serif;
-  gap: 40px; /* Відстань між контентом і зображенням */
+  padding: 90px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 
 .collections__lighting-solutions {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 50px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .collections__content {
   max-width: 600px;
   text-align: left;
-  z-index: 2;
 }
 
 .collections__title {
@@ -57,9 +56,10 @@
 }
 
 .materials__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 20px;
-  align-items: center;
+  align-items: start;
 }
 
 .materials__image {
@@ -72,7 +72,7 @@
   font-size: 22px;
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: 0.14px;
+  margin: 0;
 }
 
 .materials__description {
@@ -80,31 +80,40 @@
   color: var(--color-gray);
   font-weight: 400;
   line-height: 25px;
+  margin-top: 5px;
 }
 
 .collections__image {
   width: 100%;
+  height: 100%;
 }
 
 .collections__room-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
 @media (min-width: 768px) {
+  .collections__lighting-solutions {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
   .collections {
     padding: 120px 90px;
-    grid-template-columns: 1fr 1fr; /* Дві колонки для більшого екрану */
-    align-items: center;
   }
 
   .collections__content {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .collections__subtitle {
     font-size: 64px;
+  }
+
+  .collections__image {
+    height: auto; 
   }
 }
 
@@ -118,11 +127,14 @@
   }
 }
 
-/* Додаємо медіа-запит для мобільних пристроїв */
 @media (max-width: 767px) {
   .collections {
-    grid-template-columns: 1fr; /* Повертаємося до однієї колонки на мобільному */
+    grid-template-columns: 1fr; 
     padding: 60px 20px;
+  }
+
+  .collections__lighting-solutions {
+    grid-template-columns: 1fr;
   }
 
   .collections__content {
@@ -131,5 +143,15 @@
 
   .collections__subtitle {
     font-size: 32px;
+  }
+
+  .materials__item {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .collections__image {
+    order: 2; 
   }
 }
