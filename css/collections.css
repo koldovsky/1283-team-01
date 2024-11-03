@@ -60,10 +60,9 @@
 }
 
 .materials__item {
-  display: grid;
-  grid-template-columns: 50px 1fr; 
+  display: flex;
   gap: 20px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .materials__image {
@@ -101,7 +100,7 @@
 @media (min-width: 768px) {
   .collections__lighting-solutions {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "content image"; 
+    grid-template-areas: "content image";
     gap: 60px;
   }
 
@@ -115,6 +114,19 @@
 
   .collections__subtitle {
     font-size: 64px;
+  }
+
+  .materials {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+
+  .materials__item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+    align-items: center;
   }
 }
 
