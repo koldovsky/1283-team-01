@@ -72,7 +72,7 @@
   font-size: 22px;
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .materials__description {
@@ -80,6 +80,7 @@
   color: var(--color-gray);
   font-weight: 400;
   line-height: 25px;
+  margin-top: 5px;
 }
 
 .collections__image {
@@ -92,7 +93,6 @@
   object-fit: cover;
 }
 
-/* Desktop вигляд: зображення праворуч, а текстовий блок ліворуч */
 @media (min-width: 768px) {
   .collections__lighting-solutions {
     grid-template-columns: 1fr 1fr;
@@ -112,10 +112,26 @@
   }
 
   .materials__item {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     gap: 20px;
-    align-items: start;
+    align-items: flex-start;
+  }
+
+  .materials__image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .materials__name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 5px;
+  }
+
+  .materials__description {
+    font-size: 16px;
+    margin-top: 0;
   }
 }
 
@@ -130,7 +146,7 @@
   }
 }
 
-/* Мобільний вигляд: все в одній колонці */
+
 @media (max-width: 767px) {
   .collections {
     grid-template-columns: 1fr;
@@ -151,5 +167,6 @@
 
   .materials__item {
     flex-direction: column;
+    align-items: center;
   }
 }
