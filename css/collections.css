@@ -109,6 +109,13 @@
   .collections__subtitle {
     font-size: 64px;
   }
+
+  .collections__room-image {
+    grid-column: 2;
+    width: 100%;
+    margin-top: 0;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 1024px) {
