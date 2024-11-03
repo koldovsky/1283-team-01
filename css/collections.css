@@ -1,12 +1,11 @@
-
 .collections {
   background-color: var(--color-black);
   padding: 90px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr; 
   color: var(--color-white);
   font-family: "Manrope", sans-serif;
+  gap: 40px; 
 }
 
 .collections__lighting-solutions {
@@ -18,7 +17,6 @@
 
 .collections__content {
   max-width: 600px;
-  margin-right: 40px;
   text-align: left;
   z-index: 2;
 }
@@ -85,7 +83,7 @@
 }
 
 .collections__image {
-  flex: 1;
+  width: 100%;
 }
 
 .collections__room-image {
@@ -97,15 +95,12 @@
 @media (min-width: 768px) {
   .collections {
     padding: 120px 90px;
-  }
-
-  .collections__lighting-solutions {
-    flex-direction: row;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
   }
 
   .collections__content {
-    max-width: 50%;
+    max-width: 80%;
   }
 
   .collections__subtitle {
@@ -120,5 +115,20 @@
 
   .collections__subtitle {
     font-size: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .collections {
+    grid-template-columns: 1fr; 
+    padding: 60px 20px;
+  }
+
+  .collections__content {
+    max-width: 100%;
+  }
+
+  .collections__subtitle {
+    font-size: 32px;
   }
 }
