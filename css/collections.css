@@ -58,8 +58,8 @@
 
 .materials__item {
   display: flex;
+  align-items: flex-start;
   gap: 20px;
-  align-items: center;
 }
 
 .materials__image {
@@ -92,6 +92,7 @@
   object-fit: cover;
 }
 
+/* Desktop вигляд: зображення праворуч, а текстовий блок ліворуч */
 @media (min-width: 768px) {
   .collections__lighting-solutions {
     grid-template-columns: 1fr 1fr;
@@ -109,8 +110,16 @@
   .collections__subtitle {
     font-size: 64px;
   }
+
+  .materials__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+  }
 }
 
+/* Широкий екран */
 @media (min-width: 1024px) {
   .collections__content {
     max-width: 600px;
@@ -121,6 +130,7 @@
   }
 }
 
+/* Мобільний вигляд: все в одній колонці */
 @media (max-width: 767px) {
   .collections {
     grid-template-columns: 1fr;
@@ -137,5 +147,9 @@
 
   .collections__subtitle {
     font-size: 32px;
+  }
+
+  .materials__item {
+    flex-direction: column;
   }
 }
