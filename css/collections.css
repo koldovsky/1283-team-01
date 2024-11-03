@@ -1,10 +1,10 @@
 .collections {
   background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: "Manrope", sans-serif;
   padding: 90px 30px;
   display: grid;
   grid-template-columns: 1fr;
-  color: var(--color-white);
-  font-family: "Manrope", sans-serif;
   gap: 40px;
 }
 
@@ -18,7 +18,6 @@
 .collections__content {
   max-width: 600px;
   text-align: left;
-  z-index: 2;
 }
 
 .collections__title {
@@ -95,7 +94,7 @@
 
 @media (min-width: 768px) {
   .collections__lighting-solutions {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
     gap: 60px;
   }
 
@@ -112,26 +111,10 @@
   }
 
   .materials__item {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 20px;
-    align-items: flex-start;
-  }
-
-  .materials__image {
-    width: 70px;
-    height: 70px;
-  }
-
-  .materials__name {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-white);
-    margin-bottom: 5px;
-  }
-
-  .materials__description {
-    font-size: 16px;
-    margin-top: 0;
+    align-items: center;
   }
 }
 
@@ -146,15 +129,14 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .collections {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     padding: 60px 20px;
   }
 
   .collections__lighting-solutions {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
 
   .collections__content {
@@ -167,6 +149,6 @@
 
   .materials__item {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 }
