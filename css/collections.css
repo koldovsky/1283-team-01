@@ -60,9 +60,10 @@
 }
 
 .materials__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50px 1fr; 
   gap: 20px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .materials__image {
@@ -114,19 +115,6 @@
 
   .collections__subtitle {
     font-size: 64px;
-  }
-
-  .materials {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 30px;
-  }
-
-  .materials__item {
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    gap: 20px;
-    align-items: center;
   }
 }
 
