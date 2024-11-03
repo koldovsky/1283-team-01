@@ -145,7 +145,8 @@
   }
 
   .materials__item {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: flex-start;
   }
 }
