@@ -108,19 +108,19 @@
   }
 
   .collections__title {
-    font-size: 8px; 
+    font-size: 10px; 
   }
 
   .collections__subtitle {
-    font-size: 24px; 
+    font-size: 40px; 
   }
 
   .collections__description {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .collections__text {
-    font-size: 14px; 
+    font-size: 16px; 
   }
 
   .collections__room-image {
