@@ -36,10 +36,11 @@
     width: 100%;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: var(--gap32);
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 120px;
 }
 
 .designer-card {
@@ -131,3 +132,92 @@
         flex-direction: row;
     }
 }
+
+@media (max-width: 767px) {
+    .designers__list {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .designer-card {
+        flex-direction: column;
+        max-width: 344px;
+        max-height: 546px;
+        max-width: 100%;
+        margin: 0 auto;
+        border-top-right-radius: 150px;
+    }
+
+    .designer-card__image {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .designer-card__info {
+        width: 100%;
+        height: 50%;
+        padding: var(--gap);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .designer-card__name,
+    .designer-card__experience,
+    .designer-card__bio,
+    .designer-card__social {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .designer-card__social {
+        justify-content: center;
+        padding-bottom: var(--gap16);
+    }
+}
+
+@media (max-width: 479px) {
+    .designers__list {
+        grid-template-columns: 1fr; 
+    }
+    .designer-card {
+        flex-direction: column;
+        width: 100%;
+        max-width: 344px;
+        height: auto;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .designer-card__image {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .designer-card__info {
+        width: 100%;
+        padding: var(--gap16);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .designer-card__name,
+    .designer-card__experience,
+    .designer-card__bio,
+    .designer-card__social {
+        margin-bottom: 3px;
+        padding-left: 16px;
+    }
+
+    .designer-card__social {
+        justify-content: flex-start;
+        padding-bottom: var(--gap8);
+    }
+}
+
