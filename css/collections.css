@@ -2,7 +2,7 @@
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: "Manrope", sans-serif;
-  padding: 90px 30px;
+  padding: 90px 0px 90px 30px;
 }
 
 .collections__lighting-solutions {
