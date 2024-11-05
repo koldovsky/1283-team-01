@@ -19,7 +19,6 @@
     color: var (--color-white);
     /* color: #ffffff; */
     /* color: rgba(201, 159, 93, 0.85); Напівпрозорий колір */
-    /* color: #c99f5d; */ 
     font-size: 2.5rem;
     margin-top: 20px; 
     text-align: center; 
@@ -39,7 +38,6 @@
 
 .awards__secondary-description {
     color: rgba(225, 225, 225, 0.85); /* Напівпрозорий колір */ 
-    /* color: rgb(225,225,225); */
     margin-top: 25px; 
     text-align: center; 
     font-size: 19px; 
@@ -68,7 +66,6 @@
 }
 
 .awards__item {
-    /* padding: 39px 27px; */
      position: relative; 
      background-size: cover;
      background-position: center;
@@ -97,7 +94,6 @@
     background-position: inherit;
     filter: grayscale(100%); /* Робимо зображення чорно-білим */ 
     opacity: 0.7; /* Додаємо напівпрозоре затемнення */ 
-    /* background-color: rgba(0, 0, 0, 0.8); Напівпрозорий шар для фону */
     z-index: 1;
     border-radius: 8px; 
     background-color: rgba(0, 0, 0, 0.3); /* Легке затемнення */ 
