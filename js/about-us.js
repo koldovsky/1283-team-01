@@ -1,4 +1,5 @@
 function init() {
+    import('./header-menu.js');
     import('./accordion.js');
 }
 
