@@ -6,14 +6,17 @@
 }
 
 .awards__title {
-    color: #d78c43; 
+    color: rgba(215, 140, 67, 0.8); /* Напівпрозорий колір */
+    /* color: #d78c43; */
     font-size: 10px; 
     margin-bottom: 1rem; 
     text-transform: uppercase;
 }
 
 .awards__main-description {
-    color: #c99f5d; 
+    color: #ffffff;
+    /* color: rgba(201, 159, 93, 0.85); Напівпрозорий колір */
+    /* color: #c99f5d; */ 
     font-size: 2.5rem;
     margin-top: 20px; 
     text-align: center; 
@@ -32,9 +35,11 @@
 }
 
 .awards__secondary-description {
-    color: rgb(225,225,225); 
+    color: rgba(225, 225, 225, 0.85); /* Напівпрозорий колір */ 
+    /* color: rgb(225,225,225); */
     margin-top: 25px; 
     text-align: center; 
+    font-size: 19px; 
     max-width: 600px; /* Максимальна ширина для зручного читання на великих екранах */
     margin-left: auto; /* Вирівнювання по центру */
     margin-right: auto; /* Вирівнювання по центру */
@@ -61,6 +66,7 @@
 
 .awards__item {
     /* padding: 39px 27px; */
+     position: relative; 
      background-size: cover;
      background-position: center;
      padding: 2rem 1rem; /* Відступи всередині картки */
@@ -72,6 +78,38 @@
      height: 200px; /* Висота блоку, щоб картинка виглядала повноцінно */
      color: #fff;
      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Тінь для кращої видимості тексту на фоні */
+     overflow: hidden;
+}
+
+.awards__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-image: inherit; /* Використовуємо фон як зображення */
+    background-size: inherit;
+    background-position: inherit;
+    filter: grayscale(100%); /* Робимо зображення чорно-білим */ 
+    opacity: 0.7; /* Додаємо напівпрозоре затемнення */ 
+    /* background-color: rgba(0, 0, 0, 0.8); Напівпрозорий шар для фону */
+    z-index: 1;
+    border-radius: 8px; 
+    background-color: rgba(0, 0, 0, 0.3); /* Легке затемнення */ 
+    transition: background-color 0.3s, opacity 0.3s; 
+} 
+
+.awards__item.hovered::before {
+    background-color: rgba(0, 0, 0, 0.7); /* Сильніше затемнення при наведенні */
+    opacity: 0.85; 
+    z-index: 2; /* Підвищує пріоритет, якщо потрібно, для затемнення при наведенні */
+    background-blend-mode: overlay; 
+}
+
+.awards__name, .awards__year, .awards__description {
+    position: relative;
+    z-index: 2;
 }
 
 .awards__item--2017-luminary-award {
@@ -102,13 +140,15 @@
     /* font-size: 22px; */
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9); /* Легке затемнення білого кольору */ 
+    /* color: #fff; */
 }
 
 .awards__year {
     /* font-size: 22px; */
     font-size: 1.4rem;
-    color: #f1d1af; 
+    color: rgba(241, 209, 175, 0.9); /* Легке затемнення кольору */ 
+    /* color: #f1d1af;  */
 }
 
 .awards__description {
@@ -122,7 +162,8 @@
     margin-top: 20px;
     /* font-size: 16px; */
     font-size: 1rem; 
-    color: rgb(255, 255, 255); 
+    color: rgba(255, 255, 255, 0.9); /* Легке затемнення білого кольору */ 
+    /* color: rgb(255, 255, 255); */ 
     overflow-wrap: break-word; 
     text-align: center;
 }
