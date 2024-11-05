@@ -16,6 +16,8 @@
   --primary-footer-background:var(--color-black);
   --hover-color:rgba(0, 0, 0, 0.6); 
   --secondary-footer-background:#141414;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
   --gap0: 0px;
   --gap8: 8px;
   --gap10: 10px;
