@@ -70,7 +70,7 @@
      border-radius: 5px;
      background-color: rgba(37, 37, 39, 0.55);
      /* !important; Напівпрозорий фон */
-     /* color: #fff; */ 
+     color: #fff;  
      border-color: var(--secondary-divider-color);
      appearance: none; /* Видаляє системне оформлення */
      box-shadow: none; /* Додаємо для видалення можливих тіней */
