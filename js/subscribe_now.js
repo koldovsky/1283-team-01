@@ -17,5 +17,11 @@ form.addEventListener('submit', (event) => {
         event.preventDefault();  // Блокуємо відправку форми
         emailInput.focus();      // Переміщуємо фокус на поле email
         alert('Будь ласка, введіть правильний формат email');
+    } else {
+        // Імітація успішної відправки форми
+        console.log("Форма відправлена! Email:", emailValue);
+        
+        // Можемо також показати користувачу alert про успішну відправку
+        alert('Дякуємо за підписку!');
     }
 });
