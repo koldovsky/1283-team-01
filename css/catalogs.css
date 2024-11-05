@@ -29,10 +29,6 @@
   gap: 1px;
   padding-left: 30px;
 }
-.carousel img {
-  width: 150%;
-  height: 170px;
-}
 .carousel .carousel__item {
   display: inline-block;
 }
@@ -40,7 +36,7 @@
   color: #d78c43;
   font-size: 10px;
   margin: 0;
-  width: 555px;
+  /* width: 555px; */
   padding-bottom: 10px;
   display: grid;
   text-transform: uppercase;
@@ -48,12 +44,12 @@
 .catalog__description {
   font-size: 62px;
   font-weight: bold;
-  width: 500px;
+  /* width: 500px; */
   line-height: 1.3;
 }
 .catalog__subtitle {
   font-size: 19px;
-  width: 550px;
+  /* width: 550px; */
   color: #e1e1e1;
 }
 .catalog__button {
@@ -77,17 +73,16 @@
 }
 .catalog__item-title {
   font-size: 26px;
-  border: 0;
   padding-bottom: 15px;
 }
 .catalog__item-description {
   font-size: 16px;
-  width: 550px;
+  /* width: 550px; */
   color: #bbbbbb;
   line-height: 1.5;
 }
 .pdficon {
-  width: 20px;
+  width: 25px;
   margin-right: 10px;
 }
 .catalog__item-download {
@@ -112,7 +107,8 @@
 }
 .carousel {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
   margin: 50px auto 150px;
   position: relative;
 }
@@ -129,8 +125,44 @@
   right: -60px;
 }
 .carousel__button:hover {
-  fill: #bbbbbb;
+  fill: white;
   cursor: pointer;
   transition: fill 1s;
 }
-
+.catalog__item {
+  align-items: center;
+}
+.carousel__item img {
+  width: 100%;
+}
+.carousel__item-title {
+  padding-top: 20px;
+  font-size: 26px;
+  color: #ffffff;
+}
+.carousel__item-category {
+  font-size: 10px;
+  color: #f1d1af;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.carousel__item-year {
+  font-size: 10px;
+  color: #bbbbbb;
+  padding-top: 15px;
+  font-weight: bold;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .catalog__wrapper {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .left__part {
+    padding-left: 30px;
+    padding-bottom: 50px;
+  }
+  .right__part {
+    padding-right: 30px;
+  }
+}

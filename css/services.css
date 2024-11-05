@@ -58,6 +58,11 @@
     margin-left: var(--gap10);
 }
 
+.services__wrapper{
+    margin-top: var(--gap50);
+    justify-content: center;
+}
+
 .services__list{
     display: flex;
     align-items: flex-start;
@@ -65,9 +70,35 @@
     width: 100%;
 }
 
+.services__list-second{
+    margin-top: var(--gap10);
+    display: flex;
+    align-items: flex-start;
+    padding: var(--gap10);
+    width: 100%;
+}
+
+.services__list-title{
+    color: var(--color-main);
+    font-size: var(--gap10);
+    margin-bottom: var(--gap15);
+}
+
 .services__list-items{
+    margin-left: var(--gap15);
+    display: flex;
+    flex-direction: column;
     list-style: none;
     width: 100%;
+}
+
+.services__wrapper-second{
+    margin-top: var(--gap30);
+}
+
+.services__list-item{
+    color: var(--color-gray);
+    font-size: var(--gap16);
 }
 
 
@@ -75,6 +106,53 @@
 .services__image{
     height: var(--gap50);
     width: var(--gap50);
+}
+
+
+.services__pictures{
+    margin-top: var(--gap50);
+}
+
+
+
+.services__pictures-first{
+    padding-left: var(--gap10);
+    padding-right: var(--gap10);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services__picture-lamp{
+    padding-bottom: var(--gap10);
+}
+
+.services__picture-gallery{
+    padding-top: var(--gap10);
+    border-bottom-left-radius: var(--gap150);
+}
+
+.services__pictures-second{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services__picture-kitchen{
+    padding-left: var(--gap10);
+    padding-right: var(--gap10);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services__picture-badroom{
+    padding-left: var(--gap10);
+    padding-right: var(--gap10);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: var(--gap105);
 }
 
 @media (min-width: 769px){
@@ -105,7 +183,28 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .services__pictures{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .services__pictures-second{
+        object-fit: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 769px){
+    .services__picture-kitchen{
+        margin-top: var(--gap20)
+    }
+
+    .services__picture-badroom{
+        margin-top: var(--gap20);
+    }
 }
 
 @media (min-width: 1023px){
